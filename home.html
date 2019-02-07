@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en"><head class="at-element-marker">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" async="async" src="pay_files/s01409358922145.js"></script><script type="text/javascript" async="async" src="pay_files/s05550102343091.js"></script><script type="text/javascript" async="" src="pay_files/ec.js"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>XFINITY | My Account | EcoBill® Online Bill Pay</title><meta name="robots" content="noindex"><link rel="stylesheet" href="pay_files/britebill.css" type="text/css"><link rel="stylesheet" href="pay_files/icons.css" type="text/css"><link rel="stylesheet" href="pay_files/style.css"><link rel="apple-touch-icon" sizes="57x57" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://static.cimcontent.net/common-web-assets/favicon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="https://static.cimcontent.net/common-web-assets/favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="https://static.cimcontent.net/common-web-assets/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="https://static.cimcontent.net/common-web-assets/favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="https://static.cimcontent.net/common-web-assets/favicon/favicon-16x16.png"><link rel="manifest" href="https://static.cimcontent.net/common-web-assets/favicon/site.webmanifest"><link rel="mask-icon" href="https://static.cimcontent.net/common-web-assets/favicon/safari-pinned-tab.svg" color="#1f232e"><link rel="shortcut icon" href="https://static.cimcontent.net/common-web-assets/favicon/favicon.ico"><meta name="msapplication-TileColor" content="#1f232e"><meta name="theme-color" content="#1f232e"><meta name="google-site-verification" content="KeisTVuqC7Jg8M_hmY6rtobs5NLYLtJ5MtNfmQYbyBI"><meta name="apple-itunes-app" content="app-id=776010987"><script async="" src="pay_files/analytics.js"></script><script id="iPerceptions Harvesting engine" src="pay_files/harvest_22299.js" type="text/javascript"></script><script id="IPdef.410f8076-db76-454d-bfc2-c724a5fc59b0" src="pay_files/22299_636849742124899661" type="text/javascript"></script><script id="IPengine" src="pay_files/IpEngine_v77.js" type="text/javascript"></script><script type="text/javascript" async="" src="pay_files/conversion_async.js"></script><script async="" src="pay_files/22daf390f3d99f34f5d9b5aff6a4b89fd5ca6412.js"></script><script type="text/javascript" src="pay_files/4701b941a1"></script><script src="pay_files/1576063789359472.js" async=""></script><script async="" src="pay_files/fbevents.js"></script><script async="true" type="text/javascript" src="pay_files/tc.js"></script><script src="pay_files/bat.js" async=""></script><script async="" src="pay_files/uwt.js"></script><script src="pay_files/nr-spa-1071.js"></script><script>if (!window.MAW) {
+      window.MAW = {};
+    }
+    window.MAW.env = (function(url) {
+      // ^https?:\/\/ -- matches http(s)://
+      // (?:([a-z]{2})\.|(customer)(?:\.([^\.]+))?\.)? -- Match 0 or 1 times of
+      // these choices:
+      //   1. ([a-z]{2}) -- two letters followed by a period (e.g. es, en). This
+      //     is capture group 1.
+      //   2. (customer)(?:\.([^\.]+))?\.) -- matches customer. with an optional
+      //     environment name (e.g., local, staging). These are captures 2 and 3.
+      // xfinity\.com\/ -- matches 'xfinity.com/'
+      // (?:(sdcustomer) -- matches sdcustomer 0 or 1 times (for Spanish). This
+      // is capture group 4.
+      // ([^\/]*)\/)?/ -- matches lower Spanish env (i.e. staging), if any.
+      // This is capture group 5.
+      var rx = /^https?:\/\/(?:([a-z]{2})\.|(customer)(?:\.([^\.]+))?\.)?xfinity\.com\/(?:(sdcustomer)([^\/]*)\/)?/;
+      var match = url.match(rx);
+      if (!match) {
+        return 'local';
+      }
+      var env = (match[2] && match[3]) || (match[4] && match[5]) || 'prod';
+      return env.replace(/-/g, '');
+    }(window.location.toString()));
+
+    if (window.MAW.env !== 'prod') {
+      // First, reset the cookie by expiring it
+      document.cookie = 'csp_env=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      window.cspPattern = /csp_env=(\w+)/;
+      window.cspEnv = window.location.search.match(cspPattern);
+      if (cspEnv && cspEnv[1]) {
+        document.cookie = 'csp_env=' + cspEnv[1];
+      }
+    }</script><script>(function(el, head) {
+      var mode = window.customElements ? 'wc' : 'es5',
+          infix = window.MAW.env === 'prod' ? '' : 'staging.';
+      el.src = 'https://polaris.' + infix + 'xfinity.com/polaris.' + mode + '.js';
+      el.setAttribute('async', 'async');
+      head.appendChild(el);
+    }(document.createElement('script'), document.documentElement.firstElementChild));</script><script src="pay_files/polaris.js" async="async"></script><script>var MP={Version:"3.1.1.0",SrcLang:"en",UrlLang:"mp_js_current_lang",SrcUrl:decodeURIComponent("mp_js_orgin_url"),oSite:decodeURIComponent("mp_js_origin_baseUrl"),tSite:decodeURIComponent("mp_js_translated_baseUrl"),init:function(){1==MP.oSite.indexOf("p_js_")&&(MP.SrcUrl=window.top.document.location.href,MP.oSite=MP.tSite=window.top.document.location.host,MP.UrlLang=MP.SrcLang)},switchLanguage:function(o,e,t){t=t;var n=MP.oSite.replace("http://","").replace("https://","").replace(/\/?$/,""),r=MP.tSite.replace("http://","").replace("https://","").replace(/\/?$/,"");if(o=o.replace("http://","").replace("https://","").replace(/\/?$/,""),t&&"undefined"!=typeof MpStorage&&void 0!==MpStorage.updatePref){if(e)e=e.substring(0,2)==MP.UrlLang?MP.SrcLang+e.substring(2):e;MpStorage.updatePref(o,e)}return setTimeout(function(){var e=document.createElement("SCRIPT");e.src=o==n?location.protocol+"//"+r+"?1023749634;"+encodeURIComponent(location.href):location.protocol+"//"+o+"?1023749632;"+encodeURIComponent(MP.SrcUrl);var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)},500),!1},switchToLang:function(e){window.top.location.href==e?"undefined"!=typeof MpStorage&&void 0!==MpStorage.updatePref&&MpStorage.updatePref(MP.oSite,MP.SrcLang):window.top.location.href=e}};</script><script>MP.UrlLang='mp_js_current_lang';
+    MP.SrcUrl=decodeURIComponent('mp_js_orgin_url');
+    MP.oSite=decodeURIComponent('mp_js_origin_baseUrl');
+    MP.tSite=decodeURIComponent('mp_js_translated_baseUrl');
+    MP.init();
+    var mp_langLink = function() {
+      var langlinks = document.querySelectorAll('.langLink');
+      for (var i = 0; i < langlinks.length; i++) {
+        langlinks.item(i).onclick = function() {
+          MP.init();
+          var lang = this.getAttribute('data-lang');
+          var url = this.getAttribute('ng-href');
+          var tSite = MP.tSite.replace(/(https?:\/\/|\/?$)/g,'');
+          url = url.replace(/(https?:\/\/|\/?$)/g,'');
+          MP.switchLanguage(tSite.search(url)!=-1?MP.oSite:url, lang, true);
+          return false;
+        }
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener('load',mp_langLink,false);
+    } else if (window.attachEvent) {
+      window.attachEvent('onload',mp_langLink);
+    }</script>
+	
+	
+	<script>
+  window.intercomSettings = {
+  app_id: "ohzar5ly",
+  name: "Stephen Parish", // Full name
+  email: "Stephen.Parish@docusign.com", 
+  pseudonym: "Stevo"// Email address
+  //created_at: "<%= current_user.created_at.to_i %>" // Signup Date
+};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ohzar5ly';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+
+	
+	
+	<script>window.NREUM||(NREUM={}),__nr_require=function(n,r,t){function o(e){if(!r[e]){var t=r[e]={exports:{}};n[e][0].call(t.exports,function(t){return o(n[e][1][t]||t)},t,t.exports)}return r[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var e=0;e<t.length;e++)o(t[e]);return o}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(t){}}var o,i=t("ee"),a=t(20),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(t){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(e,t,n){function i(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function a(t,e){var n=e?null:f.now();s("err",[t,n])}var s=e("handle"),c=e(21),r=e("ee"),f=e("loader"),o=e("gos"),u=window.onerror,d=!1,p="nr@seenError",h=0;f.features.err=!0,e(1),window.onerror=function(t,e,n,r,o){try{h?h-=1:a(o||new i(t,e,n),!0)}catch(t){try{s("ierr",[t,f.now(),!0])}catch(t){}}return"function"==typeof u&&u.apply(this,c(arguments))};try{throw new Error}catch(t){"stack"in t&&(e(13),e(12),"addEventListener"in window&&e(6),f.xhrWrappable&&e(14),d=!0)}r.on("fn-start",function(t,e,n){d&&(h+=1)}),r.on("fn-err",function(t,e,n){d&&!n[p]&&(o(n,p,function(){return!0}),this.thrown=!0,a(n))}),r.on("fn-end",function(){d&&!this.thrown&&0<h&&(h-=1)}),r.on("internal-error",function(t){s("ierr",[t,f.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,j=m.hash,this[f]=v.now()}function o(){L--,m.hash!==j&&i(0,!0);var t=v.now();this.jsTime=~~this.jsTime+t-this[f],this[u]=t}function i(t,e){b.emit("newURL",[""+m,e])}function a(t,e){t.on(e,function(){this[e]=v.now()})}var s="-start",c="-end",f="fn"+s,u="fn"+c,d="cb"+s,p="fetch",h="addEventListener",l=window,m=l.location,v=t("loader");if(l[h]&&v.xhrWrappable){var w=t(10),y=t(11),b=t(8),g=t(6),x=t(13),E=t(7),P=t(14),R=t(9),O=t("ee"),T=O.get("tracer");t(15),v.features.spa=!0;var j,L=0;O.on(f,r),O.on(d,r),O.on(u,o),O.on("cb-end",o),O.buffer([f,u,"xhr-done","xhr-resolved"]),g.buffer([f]),x.buffer(["setTimeout"+c,"clearTimeout"+s,f]),P.buffer([f,"new-xhr","send-xhr"+s]),E.buffer([p+s,p+"-done",p+"-body"+s,p+"-body"+c]),b.buffer(["newURL"]),w.buffer([f]),y.buffer(["propagate",d,"cb-end","executor-err","resolve"+s]),T.buffer([f,"no-"+f]),R.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+s),a(O,"xhr-resolved"),a(O,"xhr-done"),a(E,p+s),a(E,p+"-done"),a(R,"new-jsonp"),a(R,"jsonp-end"),a(R,"cb-start"),b.on("pushState-end",i),b.on("replaceState-end",i),l[h]("hashchange",i,!0),l[h]("load",i,!0),l[h]("popstate",function(){i(0,1<L)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="fn-start",l="fn-end",m="bstTimer",v="pushState",w=t("loader");w.features.stn=!0,t(8);var y=NREUM.o.EV;o.on(h,function(t,e){t[0]instanceof y&&(this.bstStart=w.now())}),o.on(l,function(t,e){var n=t[0];n instanceof y&&i("bst",[n,e,this.bstStart,w.now()])}),a.on(h,function(t,e,n){this.bstStart=w.now(),this.bstType=n}),a.on(l,function(t,e){i(m,[e,this.bstStart,w.now(),this.bstType])}),s.on(h,function(){this.bstStart=w.now()}),s.on(l,function(t,e){i(m,[e,this.bstStart,w.now(),"requestAnimationFrame"])}),o.on(v+"-start",function(t){this.time=w.now(),this.startPath=location.pathname+location.hash}),o.on(v+"-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(23)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){var t={object:function(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return t?s(t,"fn-",null,t.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var e=r.apply(this,arguments);return o.emit(n+"start",arguments,e),e.then(function(t){return o.emit(n+"end",[null,t],e),t},function(t){throw o.emit(n+"end",[t],e),t})})}var o=t("ee").get("fetch"),i=t(20);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=a.Request,u=a.Response,d=a.fetch,p="prototype";f&&u&&d&&(i(["arrayBuffer","blob","json","text","formData"],function(t,e){r(f[p],e,c),r(u[p],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(s+"done",[null,e],n)}):o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(23)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){u.emit("jsonp-end",[],f),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){u.emit("jsonp-error",[],f),u.emit("jsonp-end",[],f),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r,o,i,a;if(t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase()&&"function"==typeof t.addEventListener){var s=(i=t.src,(a=i.match(p))?a[1]:null);if(s){var c=(o=(r=s).match(h))&&3<=o.length?{key:o[2],parent:function t(e,n){var r=e.match(l),o=r[1],i=r[3];return i?t(i,n[o]):n[o]}(o[1],window)}:{key:r,parent:window};if("function"==typeof c.parent[c.key]){var f={};d.inPlace(c.parent,[c.key],"cb-",f),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),u.emit("new-jsonp",[t.src],f)}}}}var u=t("ee").get("jsonp"),d=t(23)(u);if(e.exports=u,"addEventListener"in window){var p=/[?&](?:callback|cb)=([^&#]+)/,h=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,o=["appendChild","insertBefore","replaceChild"];d.inPlace(HTMLElement.prototype,o,"dom-"),d.inPlace(HTMLHeadElement.prototype,o,"dom-"),d.inPlace(HTMLBodyElement.prototype,o,"dom-"),u.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(23)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=i(t,"executor-",e),r=new c(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}var o=t(23),a=t("ee").get("promise"),i=o(a),s=t(20),c=NREUM.o.PR;e.exports=a,c&&(window.Promise=r,["all","race"].forEach(function(o){var i=c[o];c[o]=function(t){function n(t){return function(){a.emit("propagate",[null,!e],r),e=e||!t}}var e=!1;s(t,function(t,e){Promise.resolve(e).then(n("all"===o),n(!1))});var r=i.apply(c,arguments);return c.resolve(r)}}),["resolve","reject"].forEach(function(t){var n=c[t];c[t]=function(t){var e=n.apply(c,arguments);return t!==e&&a.emit("propagate",[t,!0],e),e}}),c.prototype.catch=function(t){return this.then(null,t)},c.prototype=Object.create(c.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(c),function(t,e){try{r[e]=c[e]}catch(t){}}),a.on("executor-start",function(t){t[0]=i(t[0],"resolve-",this),t[1]=i(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),i.inPlace(c.prototype,["then"],"then-",function(t,e){return e}),a.on("then-start",function(t,e){this.promise=e,t[0]=i(t[0],"cb-",this),t[1]=i(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(e,t,n){this.getCtx&&!t||(this.getCtx=function(){if(e instanceof Promise)var t=a.context(e);return t&&t.getCtx?t.getCtx():this})}),r.toString=function(){return""+c})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(23)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){var r=t("ee").get("timer"),o=t(23)(r),i="setTimeout",a="setInterval",s="clearTimeout";e.exports=r,o.inPlace(window,[i,"setImmediate"],i+"-"),o.inPlace(window,[a],a+"-"),o.inPlace(window,[s,"clearImmediate"],s+"-"),r.on(a+"-start",function(t,e,n){t[0]=o(t[0],"fn-",null,n)}),r.on(i+"-start",function(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=o(t[0],"fn-",this,n)})},{}],14:[function(t,e,n){function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-",a)}function o(){var t=c.context(this);3<this.readyState&&!t.resolved&&(t.resolved=!0,c.emit("xhr-resolved",[],this)),f.inPlace(this,v,"fn-",a)}function i(){for(var t=0;t<w.length;t++)r(0,w[t]);w.length&&(w=[])}function a(t,e){return e}t(6);var s=t("ee"),c=s.get("xhr"),f=t(23)(c),u=NREUM.o,d=u.XHR,p=u.MO,h=u.PR,l=u.SI,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=c;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{c.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(t){try{c.emit("internal-error",[t])}catch(t){}}return e};if(function(t,e){for(var n in t)e[n]=t[n]}(d,y),y.prototype=d.prototype,f.inPlace(y.prototype,["open","send"],"-xhr-",a),c.on("send-xhr-start",function(t,e){var n;r(0,e),n=e,w.push(n),p&&(b?b.then(i):l?l(i):(g=-g,x.data=g))}),c.on("open-xhr-start",r),p){var b=h&&h.resolve();if(!l&&!h){var g=1,x=document.createTextNode(g);new p(i).observe(x,{characterData:!0})}}else s.on("fn-end",function(t){t[0]&&t[0].type===m||i()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<u;r++)t.removeEventListener(f[r],this.listener,!1);if(!e.aborted){if(n.duration=s.now()-this.startTime,4===t.readyState){e.status=t.status;var o=function(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return p(r)}(t,this.lastSize);if(o&&(n.rxSize=o),this.sameOrigin){var i=t.getResponseHeader("X-NewRelic-App-Data");i&&(e.cat=i.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,n,this.startTime])}}}var s=t("loader");if(s.xhrWrappable){var a=t("handle"),i=t(16),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,o=t("id"),d=t(19),p=t(18),h=window.XMLHttpRequest;s.features.xhr=!0,t(14),c.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(34<d||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){var e,n,r,o;this.params={method:t[0]},e=this,n=t[1],r=i(n),(o=e.params).host=r.hostname+":"+r.port,o.pathname=r.pathname,e.sameOrigin=r.sameOrigin,this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=p(r);i&&(n.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(t){try{c.emit("internal-error",[t])}catch(t){}}};for(var a=0;a<u;a++)e.addEventListener(f[a],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+o(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+o(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof h&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof h&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof h&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(20),s=t(21),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;void 0===window.newrelic&&(newrelic=u);var d="api-",p=d+"ixn-";a(["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],function(t,e){u[e]=o(d+e,!0,"api")}),u.addPageAction=o(d+"addPageAction",!0),u.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(t){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){var i=Object.prototype.hasOwnProperty;e.exports=function(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}},{}],21:[function(t,e,n){e.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}},{}],22:[function(t,e,n){e.exports={exists:void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart}},{}],23:[function(t,e,n){function d(t){return!(t&&t instanceof Function&&t.apply&&!t[h])}var r=t("ee"),p=t(21),h="nr@original",l=Object.prototype.hasOwnProperty,a=!1;e.exports=function(o,i){function c(o,i,a,s){function t(){var e,n,r,t;try{n=this,e=p(arguments),r="function"==typeof a?a(e,n):a||{}}catch(t){u([t,"",[e,n,s],r])}f(i+"start",[e,n,s],r);try{return t=o.apply(n,e)}catch(t){throw f(i+"err",[e,n,t],r),t}finally{f(i+"end",[e,n,t],r)}}return d(o)?o:(i||(i=""),function(n,t){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(n);return e.forEach(function(e){Object.defineProperty(t,e,{get:function(){return n[e]},set:function(t){return n[e]=t}})})}catch(t){u([t])}for(var r in n)l.call(n,r)&&(t[r]=n[r])}(t[h]=o,t),t)}function f(e,n,r){if(!a||i){var t=a;a=!0;try{o.emit(e,n,r,i)}catch(t){u([t,e,n,r])}a=t}}function u(t){try{o.emit("internal-error",t)}catch(t){}}return o||(o=r),c.inPlace=function(t,e,n,r){n||(n="");var o,i,a,s="-"===n.charAt(0);for(a=0;a<e.length;a++)d(o=t[i=e[a]])||(t[i]=c(o,s?i+n:n,r,i))},c.flag=h,c}},{}],ee:[function(t,e,n){function o(){}function i(){return new o}function a(){(m.api||m.feature)&&(w.aborted=!0,m=w.backlog={})}var s="nr@context",c=t("gos"),l=t(20),m={},v={},w=e.exports=function e(f){function u(t){return t&&t instanceof o?t:t?c(t,s,i):i()}function n(t,e,n,r){if(!w.aborted||r){f&&f(t,e,n);for(var o=u(n),i=d(t),a=i.length,s=0;s<a;s++)i[s].apply(o,e);var c=m[p[t]];return c&&c.push([h,t,e,o]),o}}function d(t){return r[t]||[]}var r={},p={},h={on:function(t,e){r[t]=d(t).concat(e)},emit:n,get:function(t){return v[t]=v[t]||e(n)},listeners:d,context:u,buffer:function(t,n){l(t,function(t,e){n=n||"feature",(p[e]=n)in m||(m[n]=[])})},abort:a,aborted:!1};return h}();w.backlog=m},{}],gos:[function(t,e,n){var o=Object.prototype.hasOwnProperty;e.exports=function(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(t){}return t[e]=r}},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");(e.exports=r).ee=o},{}],id:[function(t,e,n){var r=1,o=t("gos");e.exports=function(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:o(t,"nr@id",function(){return r++})}},{}],loader:[function(t,e,n){function r(){if(!g++){var n=b.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&t))return f.abort();c(w,function(t,e){n[t]||(n[t]=e)}),s("mark",["onload",i()+b.offset],null,"api");var e=d.createElement("script");e.src="https://"+n.agent,t.parentNode.insertBefore(e,t)}}function o(){s("mark",["domContent",i()+b.offset],null,"api")}function i(){return x.exists&&performance.now?Math.round(performance.now()):(a=Math.max((new Date).getTime(),a))-b.offset}var a=(new Date).getTime(),s=t("handle"),c=t(20),f=t("ee"),u=window,d=u.document,p="addEventListener",h="attachEvent",l=u.XMLHttpRequest,m=l&&l.prototype;NREUM.o={ST:setTimeout,SI:u.setImmediate,CT:clearTimeout,XHR:l,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver};var v=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1071.min.js"},y=l&&m&&m[p]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:a,now:i,origin:v,features:{},xhrWrappable:y};t(17),d[p]?(d[p]("DOMContentLoaded",o,!1),u[p]("load",r,!1)):(d[h]("onreadystatechange",function(){"complete"===d.readyState&&o()}),u[h]("onload",r)),s("mark",["firstbyte",a],null,"api");var g=0,x=t(22)},{}]},{},["loader",2,15,5,3,4]),NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"4701b941a1",applicationID:"15576904",sa:1};</script><script>!function(){if("prod"!==window.MAW.env){window["adrum-start-time"]=(new Date).getTime(),(a=window["adrum-config"]||(window["adrum-config"]={})).appKey="AD-AAB-AAH-XCS",a.adrumExtUrlHttp="http://cdn.appdynamics.com",a.adrumExtUrlHttps="https://cdn.appdynamics.com",a.beaconUrlHttp="http://col.eum-appdynamics.com",a.beaconUrlHttps="https://col.eum-appdynamics.com",a.xd={enable:!1},t=document.createElement("script"),n=document.getElementsByTagName("script")[0],"https:"===document.location.protocol?t.src="https://cdn.appdynamics.com/adrum/adrum-4.4.1.154.js":t.src="http://cdn.appdynamics.com/adrum/adrum-4.4.1.154.js",t.async=!0,t.type="text/javascript",t.charset="UTF-8",n.parentNode.insertBefore(t,n),"undefined"!=typeof ADRUM?ADRUM.listenForErrors():console.warn("ADRUM was undefined for calling ADRUM.listenForErrors()")}var t,n,a}();</script><script src="pay_files/core.js"></script><style id="xc-header-styles">xc-header[test-primaryNav][slimNav] .xc-header--slim-navigation-ul li:first-child,xc-header[test-primaryNav][slimNav] .xc-header--navigation-ul li:last-child{display:none}@media only screen and (max-width: 955px){xc-header[test-primaryNav] .xc-header--navigation-ul .xc-header--navigation-li a[name=comcastbusiness]{display:none}}xc-header[tab=shop] [data-customer-existing]{display:none}xc-header[tab=shop][state=authenticated] [data-customer-existing],xc-header[tab=shop][state=inhome-authenticated] [data-customer-existing]{display:block}@media only screen and (min-width: 956px){xc-header[tab=shop][state=authenticated] [data-customer-existing],xc-header[tab=shop][state=inhome-authenticated] [data-customer-existing]{display:inline-block}}@font-face{font-family:"XfinityStandard";src:url("https://static.cimcontent.net/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.woff2") format("woff2"),url("https://static.cimcontent.net/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.woff") format("woff");font-weight:400;font-style:normal}.xc-screen-reader-text{position:absolute !important;display:block;visibility:visible;overflow:hidden;width:1px;height:1px;margin:-1px;border:0;padding:0;clip:rect(0px, 0px, 0px, 0px);clip-path:polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px)}.xc-header--skip{display:block;font-size:12px;line-height:18px;font-weight:normal;text-decoration:none;color:#b1b9bf;box-sizing:content-box;border:1px solid transparent;position:absolute;font-size:11px;top:-300px;background-color:#000;text-align:left;text-transform:uppercase;margin:0 12px 0 20px;padding:2px 4px;left:0;z-index:2}.xc-header--skip:visited{color:#b1b9bf}.xc-header--skip:focus{text-decoration:none}.xc-header--skip:hover,.xc-header--skip.xc-header--active{color:#fff;text-decoration:none}.xc-header--skip:focus{outline:1px dotted #a3a3a3}.xc-header--skip::selection{background:#fff;color:#2a2c2d}.xc-header--skip:focus:first-of-type{top:0;border:1px dotted #a3a3a3}.xc-header--skip:focus ~ .xc-header--slim-container ul{opacity:0}xc-header:not([slimnav]) .xc-header--slim-container{display:none}xc-header:not([slimnav]) .xc-header--skip:focus ~ .xc-header--slim-container{display:block;width:100%;z-index:1;background-color:#000}xc-header{display:block;font-family:"XfinityStandard",helvetica,arial,sans-serif;font-weight:400;background-color:#000;text-align:center;box-sizing:content-box;-webkit-font-smoothing:auto}xc-header[width] .xc-header--container{margin:0 auto}xc-header[auth-hide] .xc-header--signin-container{display:none}xc-header[hide-header]{display:none}.xc-header--icon,.xc-header--icon-small{max-width:24px;max-height:24px;stroke-width:5;position:relative;display:inline-block;vertical-align:middle;stroke:#b1b9bf;stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;fill:none;fill-rule:evenodd;clip-rule:evenodd;transition:all .2s ease-in-out 0s}.xc-header--icon-small{max-width:12px;max-height:12px}.xc-header--xfinity-logo,.xc-header--hamburger,.xc-header--personal-li:last-child{display:none}.xc-header--container{height:44px;position:relative;display:flex;align-items:center;padding:0 12px;box-sizing:border-box;justify-content:space-between}.xc-header--slim-container{padding:0 12px;text-align:center;height:24px;border-bottom:1px solid #44484c;box-sizing:content-box}.xc-header--container-nav{flex:2 1 auto;display:flex;justify-content:space-between;align-content:center}.xc-header--slim-navigation-ul{margin:0 auto;padding:0;width:100%;height:24px;box-sizing:border-box;text-align:left;list-style:none}.xc-header--slim-navigation-li{display:inline-block;vertical-align:top}.xc-header--slim-navigation-link{display:block;font-size:12px;line-height:18px;font-weight:normal;text-decoration:none;color:#b1b9bf;box-sizing:content-box;border:1px solid transparent;font-size:11px;text-transform:uppercase;margin:0 12px;padding:2px 4px;letter-spacing:.5px}.xc-header--slim-navigation-link:visited{color:#b1b9bf}.xc-header--slim-navigation-link:focus{text-decoration:none}.xc-header--slim-navigation-link:hover,.xc-header--slim-navigation-link.xc-header--active{color:#fff;text-decoration:none}.xc-header--slim-navigation-link:focus{outline:1px dotted #a3a3a3}.xc-header--slim-navigation-link::selection{background:#fff;color:#2a2c2d}.xc-header--slim-navigation-link{color:#b1b9bf}.xc-header--personal-ul,.xc-header--navigation-ul,.xc-header--mobile-icons-ul{margin:0;padding:0;list-style:none;display:flex;flex:1 0 auto;align-items:center}.xc-header--personal-ul,.xc-header--mobile-icons-ul{text-align:right;flex:0 0 auto}.xc-header--navigation-ul .xc-header--navigation-li:first-child .xc-header--navigation-link{margin-left:0}.xc-header--dropdown-container .xc-header--dropdown-btn{display:none}.xc-header--dropdown-container.xc-authenticated .xc-header--dropdown-btn{display:block}.xc-header--signin-container{text-align:right;position:relative;min-width:110px;padding-right:48px;margin-right:3px}.xc-header--signin-container.xc-unrecognized > .xc-header--signin-link,.xc-header--signin-container.xc-lite-authed > .xc-header--signin-link{display:block}.xc-header--signin-container.xc-unrecognized > .xc-header--signin-container--authenticated,.xc-header--signin-container.xc-lite-authed > .xc-header--signin-container--authenticated{display:none}.xc-header--signin-container.xc-unrecognized > .xc-header--signin-signout-link,.xc-header--signin-container.xc-lite-authed > .xc-header--signin-signout-link{display:none}.xc-header--signin-container .xc-header--authmethod-text{display:none;text-align:right;font-size:12px;min-height:16px;line-height:16px;color:#fff}.xc-header--signin-container.xc-lite-authed > .xc-header--authmethod-text{display:block}.xc-header--signin-container.xc-lite-authed > .xc-header--signin-link{margin:0;padding:0;border:0;text-transform:none;line-height:16px}.xc-header--signin-container--authenticated svg{width:15px;height:17px;position:absolute;right:25px;bottom:9px;cursor:pointer}.xc-header--signin-container--authenticated svg path{fill:#b1b9bf}.xc-header--notification-count--container{float:right;cursor:pointer}.xc-header--notification-count--container[aria-expanded=true] svg path{fill:#fff}.xc-header--signin-signout-link,.xc-header--signin-link{display:block;font-size:12px;line-height:18px;font-weight:normal;text-decoration:none;color:#b1b9bf;box-sizing:content-box;border:1px solid transparent}.xc-header--signin-signout-link:visited,.xc-header--signin-link:visited{color:#b1b9bf}.xc-header--signin-signout-link:focus,.xc-header--signin-link:focus{text-decoration:none}.xc-header--signin-signout-link:hover,.xc-header--signin-signout-link.xc-header--active,.xc-header--signin-link:hover,.xc-header--signin-link.xc-header--active{color:#fff;text-decoration:none}.xc-header--signin-signout-link:focus,.xc-header--signin-link:focus{outline:1px dotted #a3a3a3}.xc-header--signin-signout-link::selection,.xc-header--signin-link::selection{background:#fff;color:#2a2c2d}.xc-header--sub-nav-link{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0}.xc-header--sub-nav-link:hover,.xc-header--sub-nav-link:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-header--personal-link,.xc-header--navigation-link,.xc-header--dropdown-link,.xc-header--sub-nav-link{display:block;font-size:12px;line-height:18px;font-weight:normal;text-decoration:none;color:#b1b9bf;box-sizing:content-box;border:1px solid transparent}.xc-header--personal-link:visited,.xc-header--navigation-link:visited,.xc-header--dropdown-link:visited,.xc-header--sub-nav-link:visited{color:#b1b9bf}.xc-header--personal-link:focus,.xc-header--navigation-link:focus,.xc-header--dropdown-link:focus,.xc-header--sub-nav-link:focus{text-decoration:none}.xc-header--personal-link:hover,.xc-header--personal-link.xc-header--active,.xc-header--navigation-link:hover,.xc-header--navigation-link.xc-header--active,.xc-header--dropdown-link:hover,.xc-header--dropdown-link.xc-header--active,.xc-header--sub-nav-link:hover,.xc-header--sub-nav-link.xc-header--active{color:#fff;text-decoration:none}.xc-header--personal-link:focus,.xc-header--navigation-link:focus,.xc-header--dropdown-link:focus,.xc-header--sub-nav-link:focus{outline:1px dotted #a3a3a3}.xc-header--personal-link::selection,.xc-header--navigation-link::selection,.xc-header--dropdown-link::selection,.xc-header--sub-nav-link::selection{background:#fff;color:#2a2c2d}.xc-header--xfinity-logo:focus,.xc-header--hamburger:focus,.xc-header--mobile-btn:focus{outline:1px dotted #a3a3a3}.xc-header--xfinity-logo::selection,.xc-header--hamburger::selection,.xc-header--mobile-btn::selection{background:#fff;color:#2a2c2d}.xc-header--navigation-link.xc-unrecognized > span{display:none;padding:13px 15px}.xc-header--navigation-link,.xc-header--sub-nav-link,.xc-header--signin-link{text-transform:uppercase;margin:0 12px;letter-spacing:.5px}.xc-header--signin-link{margin-right:0;display:none}.xc-header--personal-info{display:block;position:absolute;font-size:0;height:0}.xc-header--personal-link{padding:0;text-align:center;width:22px;margin:0 12px;line-height:1;display:block}.xc-header--personal-link > svg{box-sizing:content-box;display:inline-block;stroke:#b1b9bf;fill:none;width:24px;height:24px;stroke-linecap:round;stroke-linejoin:round;stroke-width:6}.xc-header--personal-link > svg .wifi-bottom-circle{fill:#b1b9bf;stroke:none}.xc-header--personal-link.xc-header--active > svg,.xc-header--personal-link:hover > svg{stroke:#fff}.xc-header--personal-link.xc-header--active > svg .wifi-bottom-circle,.xc-header--personal-link:hover > svg .wifi-bottom-circle{fill:#fff}.xc-header--email-count,.xc-header--notification-count{background:#ad1704;border-radius:12px;color:#fff;font-size:11px;min-width:13px;padding:3px;position:absolute;right:0;text-align:center;text-indent:0;top:2px;box-sizing:content-box;line-height:normal}.xc-header--email-count{top:-5px}.xc-header--notification-count{cursor:pointer;border:2px solid #000;padding:2px;right:16px}.xc-header--personal-li{position:relative}.xc-header--dropdown-ul,.xc-header--notifications-ul{position:absolute;top:-600px;padding:0;margin:6px 0 0 -255px;background-color:#000;list-style:none;width:300px;box-sizing:border-box;opacity:0;transition:opacity .3s ease-in-out}.xc-header--dropdown-ul.xc-expanded,.xc-header--notifications-ul.xc-expanded{opacity:1;top:44px;z-index:9999}.xc-header--dropdown-ul{box-shadow:3px 3px 8px rgba(0,0,0,.4);width:150px;right:58px}.xc-header--dropdown-li{display:block;border-bottom:1px solid #b1b9bf}.xc-header--dropdown-li:last-child{border:0}.xc-header--dropdown-link{font-size:12px;text-align:left;box-sizing:border-box;width:100%;padding:16px}.xc-header--signin-profile-name{max-width:100px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.xc-header--dropdown-btn{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0;position:relative;display:block;padding-left:10px;padding-right:24px;height:44px;text-align:left}.xc-header--dropdown-btn:focus{outline:1px dotted #a3a3a3}.xc-header--dropdown-btn:hover,.xc-header--dropdown-btn:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-header--dropdown-btn::selection{background:#fff;color:#2a2c2d}.xc-header--dropdown-btn:before,.xc-header--dropdown-btn:after{position:absolute;top:18px;content:"";width:1px;height:7px;background-color:#b1b9bf;transition:all .2s ease-in-out}.xc-header--dropdown-btn:before{right:18px;transform:rotate(135deg)}.xc-header--dropdown-btn:after{right:13px;transform:rotate(45deg)}.xc-header--dropdown-btn[aria-expanded=true]{color:#fff}.xc-header--dropdown-btn[aria-expanded=true]:before{background-color:#fff;transform:rotate(45deg)}.xc-header--dropdown-btn[aria-expanded=true]:after{background-color:#fff;transform:rotate(135deg)}.xc-header--notifications-ul{right:4px;margin:4px 0 0 0;background:transparent}.xc-header--notifications-summary{background:#000;color:#b1b9bf;font-size:12px;height:0;overflow:hidden}.xc-header--notifications-li{position:relative;margin-top:2px;background:#000;opacity:1;max-height:100px;box-shadow:3px 3px 4px rgba(0,0,0,.4);transition:all .35s ease}.xc-header--notifications-li.xc-dismissed{opacity:0;max-height:0}.xc-header--notifications-close{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0;position:absolute;top:0;right:0;padding:12px}.xc-header--notifications-close:focus{outline:1px dotted #a3a3a3}.xc-header--notifications-close:hover,.xc-header--notifications-close:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-header--notifications-close::selection{background:#fff;color:#2a2c2d}.xc-header--notifications-close > svg{stroke:#b1b9bf;stroke-width:5;width:15px;height:15px}.xc-header--notifications-close:hover > svg{stroke:#fff}.xc-header--notifications-p{margin:0}.xc-header--notifications-sub{display:block;color:#b1b9bf;font-size:13px}.xc-header--notifications-link,.xc-header--simple-back{font-size:14px;color:#b1b9bf;text-decoration:none;text-align:left;padding:20px;display:block}.xc-header--notifications-link:focus,.xc-header--simple-back:focus{outline:1px dotted #a3a3a3}.xc-header--notifications-link::selection,.xc-header--simple-back::selection{background:#fff;color:#2a2c2d}.xc-header--notifications-link:hover,.xc-header--simple-back:hover{color:#fff}.xc-header--notifications-link:visited,.xc-header--simple-back:visited{color:#b1b9bf}.xc-header--sub-nav-ul,.xc-header--mobile-back,.xc-header--mobile-signout,.xc-header--mobile-profile-link,.xc-header--mobile-icons-container,.xc-header--simple-back,.xc-header--account-selector-mobile{display:none}[simpleheader] .xc-header--container{justify-content:center}[simpleheader] .xc-header--container-nav,[simpleheader] .xc-header--slim-container,[simpleheader] .xc-header--signin-container{display:none}[simpleheader] .xc-header--xfinity-logo{padding-top:5px;margin-left:12px;border:1px solid transparent;display:inline-block;flex-grow:2}[simpleheader] .xc-header--xfinity-logo .xc-header--xfinity-logo-img{height:21px}[simpleheader] .xc-header--simple-back[show]{display:block;position:absolute;font-size:16px;left:0}.xc-header--search{position:absolute;top:-50px;display:none}@media only screen and (max-width: 955px){.xc-external--reverse,.xc-header--navigation-link.xc-external--reverse,.xc-header--sub-nav-link.xc-external--reverse{justify-content:left}.xc-external--reverse span,.xc-header--navigation-link.xc-external--reverse span,.xc-header--sub-nav-link.xc-external--reverse span{flex-grow:0}.xc-external--reverse svg,.xc-header--navigation-link.xc-external--reverse svg,.xc-header--sub-nav-link.xc-external--reverse svg{order:1;margin:0 0 0 6px;padding:0;max-width:16px;max-height:16px}.xc-header--sub-nav-divider{border:none;border-top:1px solid #44484c;margin:12px 0}.xc-header--notification-count--container{display:none}.xc-header--slim-container{display:none}body.hamburger-opened{overflow:hidden;height:100vh;background:#000;position:fixed;width:100%}.xc-header--container{margin:0}a.xc-header--xfinity-logo,.xc-header--xfinity-logo{border:1px solid transparent;display:block;flex:0 0 auto}a.xc-header--xfinity-logo .xc-header--xfinity-logo-img,.xc-header--xfinity-logo .xc-header--xfinity-logo-img{height:21px}.xc-header--notifications-ul{display:block;position:relative;top:0 !important;right:0;padding:0 0 150px;margin:0;background-color:transparent;list-style:none;width:auto;box-sizing:border-box;opacity:1}.xc-header--notifications-summary{margin-top:15px;font-size:12px;text-align:left;height:auto;overflow:visible}.xc-header--notification-count{display:none}.xc-header--notifications-link{padding:20px 12px;color:#b1b9bf}.xc-header--notifications-li{border-top:1px solid #9ba4aa}.xc-header--notifications-li:last-child{border-bottom:1px solid #9ba4aa}.xc-header--notifications-close{padding:8px;height:39px;width:33px;stroke-width:1;top:12px}.xc-header--signin-container{position:fixed;bottom:0;left:0;right:0;height:60px;padding:0 12px;z-index:9999;background:#000;background:linear-gradient(to top, black 0%, black 70%, rgba(0, 0, 0, 0) 100%);display:none}.xc-header--signin-container.xc-visible{display:block}.xc-header--mobile-profile-link{display:block;font-size:12px;line-height:18px;font-weight:normal;text-decoration:none;color:#b1b9bf;box-sizing:content-box;border:1px solid transparent;display:inline-block;font-size:15px;position:absolute;left:7px;bottom:15px;padding:4px;text-decoration:none}.xc-header--mobile-profile-link:visited{color:#b1b9bf}.xc-header--mobile-profile-link:focus{text-decoration:none}.xc-header--mobile-profile-link:hover,.xc-header--mobile-profile-link.xc-header--active{color:#fff;text-decoration:none}.xc-header--mobile-profile-link:focus{outline:1px dotted #a3a3a3}.xc-header--mobile-profile-link::selection{background:#fff;color:#2a2c2d}.xc-header--account-selector-mobile{display:block;font-size:12px;line-height:18px;font-weight:normal;text-decoration:none;color:#b1b9bf;box-sizing:content-box;border:1px solid transparent;font-size:15px;padding:4px;text-decoration:none;position:absolute;right:6px;bottom:60px}.xc-header--account-selector-mobile:visited{color:#b1b9bf}.xc-header--account-selector-mobile:focus{text-decoration:none}.xc-header--account-selector-mobile:hover,.xc-header--account-selector-mobile.xc-header--active{color:#fff;text-decoration:none}.xc-header--account-selector-mobile:focus{outline:1px dotted #a3a3a3}.xc-header--account-selector-mobile::selection{background:#fff;color:#2a2c2d}.xc-header--dropdown-container{display:none}.xc-header--signin-signout-link,.xc-header--signin-link{font-size:15px;position:absolute;right:7px;bottom:7px;padding:4px;text-align:center;text-transform:none}.xc-header--hamburger{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0;display:flex;flex:0 0 auto;min-width:auto}.xc-header--hamburger:hover,.xc-header--hamburger:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-header--hamburger > svg{width:24px;height:24px;stroke:#b1b9bf;stroke-width:7.5;fill:#b1b9bf;top:8px;right:8px}.xc-header--hamburger > svg:last-of-type{width:24px}.xc-header--hamburger:hover > svg,.xc-header--hamburger:active > svg{stroke:#fff;fill:#fff}.xc-header--hamburger[aria-expanded=false] > svg:last-of-type{display:none}.xc-header--hamburger[aria-expanded=true]{text-indent:-1000em;z-index:9999}.xc-header--hamburger[aria-expanded=true] > svg:first-of-type{display:none}.xc-header--container-nav,.xc-header--sub-nav-ul{background:#000;margin:0;position:absolute;top:0;padding:40px 12px 24px;left:0;width:100%;z-index:9998;height:100vh;display:none;overflow-y:auto;overflow-x:hidden;box-sizing:border-box}.xc-header--container-nav.xc-expanded,.xc-header--sub-nav-ul.xc-expanded{display:block}.xc-header--sub-nav-ul{display:block;position:fixed;padding:50px 12px;transform:translateX(100%);opacity:0;transition:.3s cubic-bezier(0.19, 0.36, 0.79, 0.59)}.xc-header--sub-nav-ul.xc-subnavopen{transform:translateX(0);opacity:1;transition:.3s cubic-bezier(0.19, 0.36, 0.79, 0.59)}.xc-header--mobile-back{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0;display:none;height:44px;width:44px;position:fixed;left:0;top:0;z-index:9999}.xc-header--mobile-back:hover,.xc-header--mobile-back:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-header--mobile-back:focus{outline:1px dotted #a3a3a3}.xc-header--mobile-back::selection{background:#fff;color:#2a2c2d}.xc-header--mobile-back > svg{transform:rotate(180deg);height:19px;stroke-width:.225rem;stroke:#9ba4aa}.xc-header--mobile-back:hover > svg,.xc-header--mobile-back:active > svg{stroke:#fff}.xc-header--mobile-back.xc-visible{display:inline-block}.xc-header--sub-nav-title{display:block;background:transparent;color:#eff1f2;box-sizing:border-box;position:fixed;top:0;left:50%;transform:translate(-50%, 50%);margin:0;border:1px solid transparent;outline:none;text-transform:uppercase;letter-spacing:.05rem}.xc-header--personal-ul,.xc-header--navigation-ul{flex-direction:column;align-items:flex-start}.xc-header--navigation-li,.xc-header--sub-nav-li,.xc-header--personal-li{display:block;text-align:left;width:100%}.xc-header--personal-link > svg{padding:0 12px 0 0}.xc-header--arrow > svg{margin:0 12px 0 0}.xc-header--personal-li:last-child{display:block}.xc-header--personal-li:last-child .xc-header--personal-link > svg{stroke-width:2}.xc-header--navigation-link,.xc-header--sub-nav-link,.xc-header--personal-link{font-size:16px;text-transform:none;line-height:1.25;margin:0;padding:12px 0;width:100%;display:flex;align-items:center;text-align:left}.xc-header--mobile-icons-container{flex:1 1 auto}.xc-header--mobile-icons-container.xc-visible{display:flex}.xc-header--mobile-icons-ul{justify-content:flex-end;flex:1 1 auto}.xc-header--mobile-icons-li{position:relative;flex:0 0 auto;margin:0 24px 0 0}.xc-header--mobile-icons-li > .xc-header--mobile-btn{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0}.xc-header--mobile-icons-li > .xc-header--mobile-btn:hover,.xc-header--mobile-icons-li > .xc-header--mobile-btn:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-header--mobile-icons-li > .xc-header--mobile-btn svg{position:relative;display:inline-block;vertical-align:middle;stroke:#b1b9bf;stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;fill:none;fill-rule:evenodd;clip-rule:evenodd;width:24px;height:24px}.xc-header--mobile-icons-li > .xc-header--mobile-btn > .xc-header--mobile-icon:hover{color:#fff;stroke:#fff;fill:none;stroke-linecap:round;stroke-linejoin:round}.xc-header--navigation-link,.xc-header--sub-nav-link{display:flex;justify-content:space-between;width:100%}.xc-header--navigation-link > svg,.xc-header--sub-nav-link > svg{stroke:#b1b9bf;fill:none;width:24px;height:24px;stroke-width:6}.xc-header--navigation-link > span,.xc-header--sub-nav-link > span{flex-grow:1}.xc-header--navigation-link > span.xc-external,.xc-header--sub-nav-link > span.xc-external{flex:0 0 auto}.xc-header--arrow{flex:1 1 auto;width:100%;text-align:left}.xc-header--arrow:after{content:"〉";color:#b1b9bf;width:.5rem}.xc-header--mobile-signout{display:inline-block;bottom:15px}.xc-header--personal-info{position:relative;height:auto;font-size:16px;line-height:1;padding-left:0}.xc-header--email-count{right:auto;top:5px;left:10px}}.xc-header--search{position:absolute;top:-50px;display:none}@media only screen and (max-width: 955px){[simpleheader] .xc-header--signin-container,[simpleheader] .xc-header--hamburger,[simpleheader] .xc-header--mobile-icons-container{display:none}.xc-header--search{position:absolute;display:block;top:-50px;background-color:#333;width:100%;height:44px;z-index:10000;transition:all .25s ease;padding:0 12px}.xc-header--search.xc-search-active{top:0;background-color:#2a2c2d}.xc-header--search .xc-header--search-form{display:flex;align-items:center}.xc-header--search .xc-header--search-input{background-color:transparent;border:1px solid transparent;color:#fff;position:relative;flex:1 1 auto;width:100%;display:block;height:44px;padding:0 12px}.xc-header--search .xc-header--search-input::placeholder{color:#9ba4aa}.xc-header--search .xc-hidden{position:absolute;display:block;visibility:visible;overflow:hidden;width:1px;height:1px;margin:-1px;border:0;padding:0;clip:rect(0 0 0 0)}.xc-header--search .xc-header--search-button[type=submit],.xc-header--search .xc-header--search-button[type=reset]{flex:0 0 auto;padding:0;margin:0;background:transparent;border:transparent;color:#9ba4aa;stroke-width:3px}}@media only screen and (min-width: 956px){xc-header[branding-desktop] a.xc-header--xfinity-logo{display:none}xc-header[branding-desktop] a.xc-header--xfinity-logo.desktop-show{color:#fff;align-self:center;flex:0 0 auto;margin:0 12px 0 0;display:block;border:1px dotted transparent}xc-header[branding-desktop] a.xc-header--xfinity-logo.desktop-show .xc-header--xfinity-logo-img{display:inline-block;vertical-align:middle;width:72px;height:35px}xc-header[branding-desktop] a.xc-header--xfinity-logo.desktop-show > svg{display:inline-block;vertical-align:middle;height:21px;fill:#fff}}@media only screen and (min-width: 956px)and (max-width: 1010px){xc-header[branding-desktop] a.xc-header--xfinity-logo.desktop-show{margin:0 6px 0 0}xc-header[branding-desktop] .xc-header--navigation-link{margin:6px 6px}}</style><style id="xc-footer-styles">xc-footer{display:block;background:#000;box-sizing:content-box;clear:both}xc-footer,.xc-footer--heading{font-family:"XfinityStandard",helvetica,arial,sans-serif;font-weight:400;font-size:12px;text-align:left;-webkit-font-smoothing:auto}xc-footer[legal-corporate] .xc-footer--legal-customer{display:none}xc-footer:not([legal-corporate]) .xc-footer--legal-corporate{display:none}xc-footer[simplefooter] .xc-footer--panels,xc-footer[hide-panels] .xc-footer--panels,xc-footer[hide-social] .xc-footer--social{display:none}.xc-footer--panels,.xc-footer--bottom-container,.xc-footer--terms,.xc-footer--social{display:flex;box-sizing:border-box}.xc-footer--panels{flex:1 1 0%;min-width:0;flex-flow:row wrap;padding:16px 24px 24px;margin:0 auto}.xc-footer--list,.xc-footer--heading,.xc-footer--terms,.xc-footer--social,.xc-footer--copyright{margin:0;padding:0}.xc-footer--panel{flex:1 0 0;padding-left:24px;box-sizing:border-box}.xc-footer--list{column-count:2}.xc-footer--panel[data-span-quarter]{flex:1 0 25%}.xc-footer--panel[data-span-half]{flex:0 0 auto;width:50%}.xc-footer--panel[data-span-full]{flex:0 0 auto;width:100%}.xc-footer--heading{padding:24px 0 12px;border:0;line-height:18px;letter-spacing:.5px;color:#fff;text-transform:uppercase}.xc-footer--heading::selection{background:#fff;color:#2a2c2d}.xc-footer--list,.xc-footer--terms,.xc-footer--social{list-style-type:none}.xc-footer--list[data-columns="1"]{-moz-column-count:1;-webkit-column-count:1;column-count:1}.xc-footer--list[data-columns="2"]{-moz-column-count:2;-webkit-column-count:2;column-count:2}.xc-footer--list[data-columns="4"]{-moz-column-count:4;-webkit-column-count:4;column-count:4}.xc-footer--li{padding-bottom:12px}.xc-footer--link,.xc-footer--terms-link,.xc-footer--copyright-link{color:#9ba4aa;text-decoration:none;border:none}.xc-footer--link:focus,.xc-footer--terms-link:focus,.xc-footer--copyright-link:focus{outline:1px dotted #a3a3a3}.xc-footer--link::selection,.xc-footer--terms-link::selection,.xc-footer--copyright-link::selection{background:#fff;color:#2a2c2d}.xc-footer--link:visited,.xc-footer--terms-link:visited,.xc-footer--copyright-link:visited{color:#9ba4aa}.xc-footer--link:hover,.xc-footer--terms-link:hover,.xc-footer--copyright-link:hover{color:#fff;text-decoration:none}.xc-footer--link:focus,.xc-footer--terms-link:focus,.xc-footer--copyright-link:focus{text-decoration:none}.xc-footer--link{font-size:14px;line-height:1.5}.xc-footer--terms-link,.xc-footer--copyright-link{font-size:11px}.xc-footer--bottom,.xc-footer--copyright{background-color:#191919}.xc-footer--bottom-container{align-items:center;justify-content:space-between;margin:0 auto;height:60px;margin:0 auto}.xc-footer--terms-li{margin-left:24px}.xc-footer--terms-li:first-child{margin-left:0}.xc-footer--terms-li:first-child .xc-footer--terms-link:after{position:relative;top:2px;margin-left:2px;content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAABcSAAAXEgFnn9JSAAAC2GlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjajZPLaxRZFIe/6tygkCAMtK9eDJdZSJAklA80Ij7SSWyisW3KRJMgSKf6dneZm+qaW9VxFBHJxqXOMHvxsXDhH+DChSvdKBF8IYh7FUUU3Ki0i+p0V/B5Vl/9zrm/c84tLnTaxSDQKQlzfmScXFZOTk3LFc9IsZ4uMnQV3TAYLBTGAIpBoPkmPj7BAnjY9/38T6OrFLpzYK2E1PuSCl3o+AzUKpNT0yA0kD4ZBRGIc0DaxPr/QHom5utA2ow7QyBuAavcwEQg7gEDbrVYgk4B9FYSNTMJntN1tznPH0C38icOAxsgdVaFI022FkrF4QNAP1ivSmp4BOgF63rZ2zcK9ADPy2bfRMzWRi8aHY85dcTX+bEmr/Nn8oeaniKIss6Sfzh/eGRJP1HcXwAyYDmztQMOsAZSe09Xx4/GbOnT1aF8kx+ZujMB/AWpa4EujMWzpe4whUbh4aPwkTjkyNJHgKFGGQ8PjUcOhY/C4BEy+91KTSHBkhwv8XmJweNv6igkDkfI5lnobTlI+6n9xn5sX7av2a8vZuo97cyCOe65ixfeUUBhWr7NbHOm2N+lxiAaTQXFXGunMDFpYrqyfzHTdnIXL7xT5/MfE1uqRKc+ZlCEzGLwmEehCVEMJrr96PYU+u6ZW+vavR6Lm8cedt89s+yuat9spVpbLf9u1yXPK/Gn2CRGxYDYgRR7xF6xWwyLAbFTjLVOTODjcRKFIaSIxucUctn/W6olfmsApHPKV8ZzpZPLyoKplT2tEk/0F+nfjMmpaRnTdB1uhLB2a1v74GAB1prFthYdhF1voeNBW+vJwOpLcHObWzfzTWvLug+R+icCGKoFp4xXqUZys21vl4NBoJUc9d3+XlnUWhqvUo1CaVSozLwq9ROWt2yOXbqz0Pmi0fiwAVb8B1/+bTQ+XWk0vlyFjudwW38FwLz9RWmE3Y4AAAAgY0hSTQAAbZgAAHOOAADyewAAhNoAAG6UAADlGgAAMycAABkXmUkcfwAAAX5JREFUeNpkkb9rU3EUxT/nm5dKWxVxEMTR1b1WiPQ/cPEp6FRMobs4OD1DsFNBpIsmdVJBGrq5VnxtHYrgoHSrPwZb0CLRoJZI3vc4NAkRL5zlcs69nHNEM1/FTCPfY/frfWfpHwDVXiaQR2dZZGTEo01T9LpIHcw+QXXfqDwbElqtEmkaDQYIlMfAqgNTiNdEP9Ty+pqWX50HcJoW1GpSjQCQ4AjSN1crH7W0cYsj8Q3SdVxsqJk/oderO8s+DD4GFEBxDIBxX0Ead/XiFMTboEskyZYa6zf1+O3koQBAIfYdtZE6AJ6bWaQXzgKbnDq9SPf7al8gsA1AZBrHyjASx6PAJEUB5sehB/2T2UnQhJ5uHeegu0DZ84gd2l+usedW3zRA+N2XtIHLHHTfYU4gFiiFJc9W9gc3EzDY5/TgxRnKyU8iCfYalO967sL70T6cpoVo5mbiGPzq7GDPEvjk6sznIfG/xhv5cxr5Ns38qm0GYGWlxB2H0Z1t/g4Av522Y1k9VQ0AAAAASUVORK5CYII=)}.xc-footer--social{justify-content:space-between;margin-right:24px;width:100px}.xc-footer--social-link{border:1px solid transparent;line-height:normal;font-size:0;color:#fff}.xc-footer--social-link svg{width:24px;height:24px}.xc-footer--social-link:focus{outline:0;border:1px dotted #a3a3a3 !important}.xc-footer--terms[terms] #xc-footer--terms:after,.xc-footer--terms[privacy] #xc-footer--privacy:after{content:" (Updated)";color:#fff}.xc-footer--xfinity-logo{margin-left:24px}.xc-footer--xfinity-logo:focus{outline:1px dotted #a3a3a3}.xc-footer--xfinity-logo .xc-footer--xfinity-logo-img{display:inline-block;vertical-align:middle;width:72px;height:35px}.xc-footer--copyright{border-top:1px solid #2a2c2d;line-height:36px;text-align:center}.xc-footer--copyright-link{color:#dde2e6;font-weight:400}.xc-footer--toggle{display:none}@media only screen and (max-width: 955px){.xc-footer--panels,.xc-footer--bottom-container,.xc-footer--xfinity-logo,.xc-footer--terms-li,.xc-footer--terms-link,.xc-footer--social,.xc-footer--copyright-link{margin:0;padding:0}.xc-footer--panels{flex-flow:column wrap}.xc-footer--panel,.xc-footer--panel[data-span-half]{flex:auto}.xc-footer--panel{flex:auto;border-bottom:1px solid #2a2c2d;z-index:1;padding:0 7px;padding-bottom:24px}.xc-footer--toggle{font:inherit;cursor:pointer;font-size:12px;color:#b1b9bf;text-decoration:none;background:transparent !important;border:1px solid transparent !important;box-sizing:border-box;margin:0;padding:0;display:block;position:absolute;right:7px;color:#2b9cd8 !important;z-index:1}.xc-footer--toggle:focus{outline:1px dotted #a3a3a3}.xc-footer--toggle:hover,.xc-footer--toggle:active{background:transparent !important;border:1px solid transparent !important;color:#fff;text-decoration:none}.xc-footer--toggle::selection{background:#fff;color:#2a2c2d}.xc-footer--heading,.xc-footer--toggle{padding:30px 4px 10px 5px}.xc-footer--list,.xc-footer--list[data-columns="2"],.xc-footer--list[data-columns="4"]{column-count:1}.xc-footer--li:nth-child(n+4){display:none}.xc-footer--link{margin:1px}.xc-footer--bottom-container{flex-direction:column;justify-content:space-around;height:250px}.xc-footer--xfinity-logo .xc-footer--xfinity-logo-img{height:30px}.xc-footer--terms{justify-content:space-around;align-items:center;flex-direction:column;height:80px}.xc-footer--toggle,.xc-footer--terms-link,.xc-footer--copyright-link{font-size:14px;line-height:18px}.xc-footer--toggle-hide{display:none}.xc-footer--panel.xc-opened .xc-footer--toggle-hide{display:inline}.xc-footer--panel.xc-opened .xc-footer--toggle-show{display:none}.xc-footer--panel.xc-opened .xc-footer--li:nth-child(n+4){display:block}}</style><style id="at-mbox-default-style">.mboxDefault {visibility:hidden;}</style><style>.at-element-marker {visibility:visible;}</style><script src="pay_files/s-code-contents-11c8f38a44853a1fa459e08fd609da47c7ce7efd.js"></script><script src="pay_files/satellite-58349d6e64746d6762001b85.js"></script><script src="pay_files/satellite-58349d6e64746d6762001b86.js"></script><script src="pay_files/satellite-58349d6e64746d6762001b87.js"></script><script src="pay_files/satellite-5966429964746d7634007952.js"></script><script src="pay_files/satellite-599de5d164746d217a0018e8.js"></script><script src="pay_files/satellite-5b19531f64746d3e16000d0e.js"></script><script src="pay_files/satellite-5a2ea19b64746d7c6f007f98.js"></script><script src="pay_files/satellite-5ba10dff64746d144300061b.js"></script><script src="pay_files/a"></script><script src="pay_files/a_002"></script><script src="pay_files/satellite-5a16208964746d54a700b8ed.js"></script><script src="pay_files/satellite-5a16208964746d54a700b8ed.js"></script><script src="pay_files/satellite-580fe8b364746d7de000adbc.js"></script><script src="pay_files/satellite-59a583c164746d7ae40061e0.js"></script><script src="pay_files/satellite-59aff67c64746d516b00508e.js"></script><script src="pay_files/satellite-57ee81f364746d4149005060.js"></script><script src="pay_files/satellite-58937b8364746d4e8900849a.js"></script><script src="pay_files/satellite-57ee81f364746d4149005061.js"></script><script src="pay_files/satellite-58111d4b64746d7dda00b705.js"></script><script src="pay_files/satellite-58110fa664746d4cc800a52d.js"></script><script src="pay_files/satellite-58110fa664746d4cc800a52e.js"></script><script src="pay_files/satellite-5875459164746d7b140014ea.js"></script><script src="pay_files/satellite-5c2f79da64746d19e6016354.js"></script><script src="pay_files/satellite-5a16208964746d54a700b8ed.js"></script><script src="pay_files/satellite-5b92c80064746d04bb0007b1.js"></script></head><body ng-app="my_account" data-env="&lt;!--# echo var='ENV' default='prod' --&gt;" class="" style=""><script type="text/javascript" src="pay_files/event"></script><script type="text/javascript" src="pay_files/g.json"></script><div ng-controller="AppController" ng-class="[route.current.appClass, { 'page-app--nav-open' : navOpen }]" class="page-app page-overview page-app--has-hero"><div class="a11y-links"><a class="visuallyhidden focusable" href="#page-view" ng-click="skipToContent(); $event.preventDefault();">Skip to main content</a></div><xc-header tab="myaccount" client-id="myAccountWeb" tracking-module="global nav" is-authed="" slimnav="" sign-out-url="https://oauth.xfinity.com/oauth/sp-logout?client_id=my-account-web" disable-skip="true" enable-notifications="" ng-show="route.current.takeover !== 'payment' &amp;&amp;
+               route.current.takeover !== 'reschedule' &amp;&amp;
+               route.current.takeover !== 'outageCredit' &amp;&amp;
+               !route.current.breadcrumbs &amp;&amp;
+               !prepaid" aria-hidden="false" first-name="STEPHEN" email-count="0"><div class="xc-header--slim-container" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-header-slim&quot;]}" data-dtm="container" data-dtm-level1="polaris" data-dtm-level2="header"><ul class="xc-header--slim-navigation-ul" role="navigation" aria-label="Xfinity"><li class="xc-header--slim-navigation-li"><a class="xc-header--slim-navigation-link" name="xfinity" href="https://www.xfinity.com/?INTCMP=ILC:MA:GEN:GEN5b9ab8ad1e540">Xfinity</a></li><li class="xc-header--slim-navigation-li"><a class="xc-header--slim-navigation-link" name="comcastbusiness" href="https://business.comcast.com/?utm_source=dotnet&amp;utm_campaign=UniSlimNav0314SlimNavMYX&amp;utm_medium=SlimNav">Comcast Business</a></li></ul></div><div class="xc-header--container" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-header&quot;]}" data-dtm="container" data-dtm-level1="polaris" data-dtm-level2="header"><a class="xc-header--simple-back">&lt; Back </a><a class="xc-header--xfinity-logo" href="https://www.xfinity.com/?INTCMP=ILC:MA:GEN:GEN5b9ab8ad1e540"><img class="xc-header--xfinity-logo-img" src="pay_files/xfinity_logo.svg" alt="xfinity" aria-label="xfinity"></a><div class="xc-header--mobile-icons-container"><ul class="xc-header--mobile-icons-ul"></ul></div><button class="xc-header--hamburger" type="button" aria-haspopup="true" aria-expanded="false"><span class="xc-screen-reader-text">Open Menu</span> <svg focusable="false" viewBox="0 0 100 100"><line x1="10" y1="25" x2="90" y2="25"></line><line x1="10" y1="50" x2="90" y2="50"></line><line x1="10" y1="75" x2="90" y2="75"></line></svg> <svg focusable="false" viewBox="0 0 100 100"><line x1="20" y1="20" x2="80" y2="80"></line><line x1="20" y1="80" x2="80" y2="20"></line></svg></button><div class="xc-header--container-nav" role="navigation" aria-label="Xfinity"><button class="xc-header--mobile-back" type="button"><svg viewBox="0 0 30 60"><polyline points="0,0 25,25 0,50"></polyline></svg></button><ul class="xc-header--navigation-ul" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-navigation&quot;]}"><li class="xc-header--navigation-li"><a class="xc-header--navigation-link" name="myxfinity" href="https://my.xfinity.com/?CMP=ILC_myxfinity_myAccountWeb_au">My Xfinity</a></li><li class="xc-header--navigation-li"><a class="xc-header--navigation-link" name="shop" href="https://www.xfinity.com/learn/offers?CMP=ILC_shop_myAccountWeb_au">Shop/Upgrade</a></li><li class="xc-header--navigation-li"><a class="xc-header--navigation-link" name="support" href="https://www.xfinity.com/support/?CMP=ILC_support_myAccountWeb_au">Support</a></li><li class="xc-header--navigation-li"><a class="xc-header--navigation-link xc-header--active" name="myaccount" href="https://customer.xfinity.com/Overview/?CMP=ILC_myaccount_myAccountWeb_au">My Account</a></li><li class="xc-header--navigation-li" style="display:none;" aria-hidden="true"><a class="xc-header--navigation-link" target="_blank" name="comcastbusiness" href="https://business.comcast.com/triple-play-bundle?utm_source=dotcom&amp;utm_campaign=Right-Side&amp;utm_medium=dotcom&amp;CMP=ILC_comcastbusiness_myAccountWeb_au">Comcast Business</a></li><script type="formula" id="formula-navigation"><li class="xc-header--navigation-li">
+                    <a class="xc-header--navigation-link "
+                        
+                        name="shop"
+                        href="https://www.xfinity.com/learn/offers">
+                        
+                         Shop
+                        
+                    </a>
+                </li>
+                
+                <li class="xc-header--navigation-li">
+                    <a class="xc-header--navigation-link "
+                        
+                        name="myaccount"
+                        href="https://customer.xfinity.com/Overview/">
+                        
+                          My Account
+                        
+                    </a>
+                </li>
+                
+                <li class="xc-header--navigation-li">
+                    <a class="xc-header--navigation-link "
+                        
+                        name="support"
+                        href="https://www.xfinity.com/support/">
+                        
+                          Support
+                        
+                    </a>
+                </li>
+                
+                <li class="xc-header--navigation-li">
+                    <a class="xc-header--navigation-link "
+                        
+                        name="myxfinity"
+                        href="https://my.xfinity.com/">
+                        
+                          My Xfinity
+                        
+                    </a>
+                </li>
+                
+                <li class="xc-header--navigation-li">
+                    <a class="xc-header--navigation-link "
+                        target=_blank
+                        name="comcastbusiness"
+                        href="https://business.comcast.com/triple-play-bundle?utm_source=dotcom&amp;utm_campaign=Right-Side&amp;utm_medium=dotcom&amp;CMP=ILC_comcastbusiness_dotcom-right-side">
+                        
+                          Comcast Business
+                        
+                    </a>
+                </li></script></ul><ul class="xc-header--personal-ul" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-personal-navigation&quot;]}"><li class="xc-header--personal-li" data-customer-all=""><a class="xc-header--personal-link" name="email" title="Email" href="https://xfinityconnect.email.comcast.net/" target="_blank"><svg focusable="false" viewBox="0 0 100 100"><path d="M9,18c-3.8,0-7,3.2-7,7l0,49c0,3.8,3.2,6,7,6h82
+			c3.7,0,7-2.3,7-6V25c0-3.9-3.2-7-7-7H9z"></path><path d="M2.3,23l48,33.2L98,23"></path></svg> <span class="xc-header--personal-info">Email</span><div class="xc-header--email-count" hidden=""></div></a></li><li class="xc-header--personal-li" data-customer-all=""><a class="xc-header--personal-link" name="xfinity stream" title="Xfinity Stream" href="https://www.xfinity.com/stream/"><svg focusable="false" viewBox="0 0 100 100"><rect x="4" y="16" width="94" height="54" rx="12" ry="12"></rect><line x1="26" y1="86" x2="74" y2="86"></line><line x1="50" y1="72" x2="50" y2="86"></line></svg> <span class="xc-header--personal-info">Xfinity Stream</span></a></li><li class="xc-header--personal-li" data-customer-existing=""><a class="xc-header--personal-link" name="xfinity home" title="Xfinity Home" href="https://home.xfinity.com/"><svg focusable="false" viewBox="0 0 100 100"><polyline points="86,36 86,85 14,85 14,18 26,18 26,28"></polyline><polyline points="3,41 50,15 97,41"></polyline><line x1="50" y1="38" x2="50" y2="56"></line><path d="M42,43.4c-3.9,2.6-6.5,7-6.5,12.1C35.5,63.5,42,70,50,70s14.5-6.5,14.5-14.5c0-5-2.6-9.5-6.5-12.1"></path></svg> <span class="xc-header--personal-info">Xfinity Home</span></a></li><li class="xc-header--personal-li smart-internet" data-customer-existing=""><a class="xc-header--personal-link" name="xfinity xfi" title="Xfinity xFi" href="https://internet.xfinity.com/" rel="nofollow"><svg focusable="false" viewBox="0 0 100 100"><circle class="wifi-bottom-circle" cx="50" cy="81" r="7"></circle><path d="M4,37 c12.1-12.6,27.2-20,46-20c18.7,0,33.9,7.7,46,20"></path><path d="M18,52 c8.5-8.8,18.8-14,32-14c13.1,0,23.5,5.4,32,14"></path><path d="M34,65c4.2-4.4,9.4-7,16-7 c6.5,0,11.8,2.7,16,7"></path></svg> <span class="xc-header--personal-info">Xfinity xFi</span></a></li><li class="xc-header--personal-li" data-customer-existing=""><a class="xc-header--personal-link" name="voice" title="Voice" href="https://connect.xfinity.com/voice"><svg focusable="false" viewBox="0 0 100 100"><path d="M43,58c10.7,10.7,19,14,19,14s4.5-4.5,6-6c0.8-0.8,1.3-1.4,2-2c1.1-0.9,2.5-1.5,4-1c3.4,1.2,10.3,3.7,13,6c2.5,2.1,4.7,6.7-2,13
+	c-6.7,6.7-13.2,7-15,7c-6.5,0-16.2-3.2-36-23S12,35.5,12,31c0-1.6,0.3-8.3,7-15s10.1-4.4,12-2c2.3,2.9,5.1,9.8,7,13
+	c0.7,1.2,1.3,2.7,0,4c-0.6,0.6-1.2,1.2-2,2c-1.7,1.6-7,6-7,6S32.7,47.3,43,58z"></path></svg> <span class="xc-header--personal-info">Voice</span></a></li><li class="xc-header--personal-li" data-customer-existing=""><a class="xc-header--personal-link" name="xfinity mobile" title="Xfinity Mobile" href="https://www.xfinity.com/mobile/"><svg viewBox="0 0 40 40"><path d="M10.8055323,0.487804878 L29.5122419,0.487804878 C30.3069604,0.487804878 30.9512195,1.11179791 30.9512195,1.8815331 L30.9512195,38.1184669 C30.9512195,38.8881951 30.3069604,39.5121951 29.5122419,39.5121951 L10.8055323,39.5121951 C10.0107993,39.5121951 9.36655463,38.8881951 9.36655463,38.1184669 L9.36655463,1.8815331 C9.36655463,1.11179791 10.0107993,0.487804878 10.8055323,0.487804878 Z" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.36655463,6 L30.9512195,6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.36655463,32 L30.9512195,32" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.1588871,34.4453381 C19.3304671,34.4453381 18.6588871,35.1169121 18.6588871,35.9453381 C18.6588871,36.7737641 19.3304671,37.4453381 20.1588871,37.4453381 C20.9873071,37.4453381 21.6588871,36.7737641 21.6588871,35.9453381 C21.6588871,35.1169121 20.9873071,34.4453381 20.1588871,34.4453381 Z" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg> <span class="xc-header--personal-info">Xfinity Mobile</span></a></li><li class="xc-header--personal-li comcastbusiness" data-customer-all=""><a class="xc-header--personal-link xc-external--reverse" name="comcast business" title="Comcast Business" href="https://business.comcast.com/triple-play-bundle?utm_source=dotnet&amp;utm_medium=dotnet&amp;utm_campaign=headerlink" target="_blank"><svg focusable="false" viewBox="0 0 11 11"><path stroke-width="1" stroke-linejoin="round" stroke="currentColor" d="M9.25 7.8V10H1V1.75h2.16M6.068.69h4.243v4.242"></path><path stroke-width="1" stroke="currentColor" d="M9.834 1L4 6.834"></path></svg> <span class="xc-header--personal-info">Comcast Business</span></a></li></ul><ul class="xc-header--notifications-ul" data-dtm="container" data-dtm-level1="polaris" data-dtm-level2="notification"><li id="xc-header--notifications-summary" class="xc-header--notifications-summary"><h3></h3></li></ul></div><div class="xc-header--signin-container"><span class="xc-header--authmethod-text"></span> <a class="xc-header--signin-link" href="https://my.xfinity.com/oauth/login">STEPHEN</a><div class="xc-header--signin-container--authenticated"><div class="xc-header--notification-count--container" hidden=""><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"></path></svg><div class="xc-header--notification-count"></div></div><a class="xc-header--mobile-profile-link xc-header--signin-profile-name" href="https://customer.xfinity.com/#/users/me" aria-label="View your Account" data-dtm-level3="ViewAccountLink" title="STEPHEN">STEPHEN</a> <a class="xc-header--mobile-signout xc-header--signin-signout-link" href="https://oauth.xfinity.com/oauth/sp-logout?client_id=my-account-web">Sign Out</a><div class="xc-header--dropdown-container xc-authenticated"><button class="xc-header--dropdown-btn xc-header--signin-profile-name" aria-haspopup="true" aria-expanded="false" title="STEPHEN">STEPHEN</button><ul class="xc-header--dropdown-ul" data-hide="" hidden=""><li class="xc-header--dropdown-li"><a class="xc-header--dropdown-link" name="view my bill" href="https://customer.xfinity.com/#/billing">View My Bill</a></li><li class="xc-header--dropdown-li"><a class="xc-header--dropdown-link" name="account settings" href="https://customer.xfinity.com/#/settings/account">Account Settings</a></li><li class="xc-header--dropdown-li"><a class="xc-header--dropdown-link xc-header--signin-signout-link" href="https://oauth.xfinity.com/oauth/sp-logout?client_id=my-account-web">Sign Out</a></li></ul></div></div></div></div><svg style="display:none;" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 20 20" fill="none" stroke="currentColor" id="xc-svg-search"><path d="M16.478 8.739A7.739 7.739 0 1 1 1 8.739a7.739 7.739 0 0 1 15.478 0zm-2.353 5.605L19 19.22l-4.875-4.876z" stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"></path></symbol><symbol id="xc-svg-close" viewBox="0 0 100 100" fill="none"><line stroke="currentColor" stroke-width="5" x1="20" y1="20" x2="80" y2="80"></line><line stroke="currentColor" stroke-width="5" x1="20" y1="80" x2="80" y2="20"></line></symbol><symbol id="xc-svg-external" viewBox="0 0 11 11" stroke="none" fill="none"><path stroke-width="1" stroke-linejoin="round" stroke="currentColor" d="M9.25 7.8V10H1V1.75h2.16M6.068.69h4.243v4.242"></path><path stroke-width="1" stroke="currentColor" d="M9.834 1L4 6.834"></path></symbol></svg> </xc-header><!-- ngIf: !access.loginRequired -->
+	
+	<!-- ngIf: access.loginRequired -->
+	
+	
+	<div ng-if="access.loginRequired" id="page-app" ng-controller="GlobalController"><!-- ngIf: prepaid --><!-- ngIf: showThankYouTakeover() --><div class="page-app__wrapper"><!-- ngIf: account.accountNumber && termsOfServiceAccepted.status === 'READY' --><div ng-if="account.accountNumber &amp;&amp; termsOfServiceAccepted.status === 'READY'"><!-- ngIf: route.current.takeover !== 'outageCredit' &&
+                   !route.current.breadcrumbs --><header tracking-module="sub nav header" id="page-header" class="page-header" role="banner" active-nav-item="activeNavItem()" account-number="8498350231633166" account-alias="719 7TH AVE NW" current-route="route.current" account-status="account.status" agent-view="agentView" csp-env="cspEnv" ng-if="route.current.takeover !== 'outageCredit' &amp;&amp;
+                   !route.current.breadcrumbs">
+  <div class="page-header__wrapper">
+    <div class="page-header__content">
+      <div tracking-module="navigation-bar" class="page-header__navigation" active-nav-item="overview" account-status="accountStatus" account-number="accountNumber" account-alias="linkedAccounts.list[currentAccIndex].name || accountAlias" linked-account="linkedAccounts.list" is-prepaid="isPrepaid">
+  <button type="button" class="page-header__toggle-menu" ng-click="toggleNav()">My Account<span class="nav-primary__icon icon-arrow-down-mobile-white"></span></button>
+
+  <nav ng-class="{'nav-primary--is-open': open}" class="nav-primary" role="navigation">
+    <a href="#/" class="nav-primary__link nav-primary__link--active" ng-click="closeNav()" ng-class="{'nav-primary__link--active': activeNavItem === 'overview'}">Overview</a>
+
+    <!-- ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid --><a href="#/billing" class="nav-primary__link" ng-click="closeNav()" ng-if="accountStatus !== 'DISCONNECTED' &amp;&amp; !isPrepaid" ng-class="{'nav-primary__link--active': activeNavItem === 'billing'}">Billing</a><!-- end ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid -->
+
+    <!-- ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid --><a href="#/services" class="nav-primary__link" ng-click="closeNav()" ng-if="accountStatus !== 'DISCONNECTED' &amp;&amp; !isPrepaid" ng-class="{'nav-primary__link--active': activeNavItem === 'services'}">Services</a><!-- end ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid -->
+
+    <a href="#/users" class="nav-primary__link" ng-click="closeNav()" ng-class="{'nav-primary__link--active': activeNavItem === 'users'}">Users</a>
+
+    <!-- ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid --><a href="#/devices" class="nav-primary__link" ng-click="closeNav()" ng-if="accountStatus !== 'DISCONNECTED' &amp;&amp; !isPrepaid" ng-class="{'nav-primary__link--active': activeNavItem === 'devices'}">Devices</a><!-- end ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid -->
+
+    <!-- ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid --><a ng-href="#/settings" class="nav-primary__link" ng-click="closeNav()" ng-if="accountStatus !== 'DISCONNECTED' &amp;&amp; !isPrepaid" ng-class="{'nav-primary__link--active': activeNavItem === 'settings'}" href="#/settings">Settings</a><!-- end ngIf: accountStatus !== 'DISCONNECTED' && !isPrepaid -->
+
+    <!-- ngIf: showSecurityTab -->
+
+    <a ng-href="https://es.xfinity.com/sdcustomer/Overview" ng-click="closeNav()" data-lang="es" mporgnav="" class="langLink nav-primary__link nav-primary__link--external nav-primary__link--mobile-only" href="https://es.xfinity.com/sdcustomer/Overview">Español</a>
+
+    <span class="nav-primary__link nav-primary__link--mobile-only">
+      <!-- ngIf: linkedAccount.length > 1 -->
+      Account 8498 3502 3163 3166<br>
+      719 7TH AVE NW
+    </span>
+  </nav>
+</div>
+
+      <div class="page-header__account-number link-group">
+        <div class="link-group__item">
+          <a class="langLink" data-lang="es" mporgnav="" ng-href="https://es.xfinity.com/sdcustomer/Overview" href="https://es.xfinity.com/sdcustomer/Overview">Español</a>
+        </div>
+        <!-- ngIf: agentView -->
+        <!-- ngIf: cspEnv -->
+        <div ng-show="!isPrepaid" class="link-group__item account-number" aria-hidden="false">
+
+          <button type="button" aria-expanded="false" class="button--text" ng-click="openDropdown($event)" tracking-replace-pattern=".*" tracking-replacement="Open account dropdown">
+            <abbr title="Account #8498350231633166" id="account_number" class="linked-group__number">Account ...166</abbr>
+            <span class="nav-primary__icon icon-arrow-down-mobile-white"></span>
+          </button>
+
+          <div class="accounts-menu card-group" role="" ng-class="{ 'is-active' : opened }">
+            <!-- ngRepeat: account in linkedAccounts.list | limitTo:maxVisibleLinkedAccounts --><!-- ngIf: linkedAccounts.list.length > 1 --><!-- end ngRepeat: account in linkedAccounts.list | limitTo:maxVisibleLinkedAccounts -->
+            <!-- ngRepeat: account in linkedAccounts.list --><!-- ngIf: linkedAccounts.list.length === 1 --><div class="card-group__item" ng-repeat="account in linkedAccounts.list" ng-if="linkedAccounts.list.length === 1">
+              <div class="card card--switcher active">
+                <span class="card__content">
+                  <span class="color--blue-sky card__line">Account 8498 3502 3163 3166</span>
+                  <span class="card__line">719 7TH AVE NW</span>
+                </span>
+              </div>
+            </div><!-- end ngIf: linkedAccounts.list.length === 1 --><!-- end ngRepeat: account in linkedAccounts.list -->
+            <div class="card-group__item ng-hide" role="menuitem" ng-show="linkedAccounts.list.length &gt; maxVisibleLinkedAccounts" aria-hidden="true">
+              <button class="card card--switcher" ng-click="openSwitchAccountModal()">
+                <span class="card__content">
+                  <span class="link card__line">See all</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header><!-- end ngIf: route.current.takeover !== 'outageCredit' &&
+                   !route.current.breadcrumbs --><!-- ngIf: route.current.breadcrumbs --><div id="page-content" class="page-content"><div id="page-main" class="page-main"><!-- ngView:  --><main id="page-view" class="page-view view" tabindex="-1" ng-view="" autoscroll="true" aria-live="assertive" aria-atomic="true"><section class="page-section ui-blue hero page-section--content-relative" style="" tracking-module="stateful header" classes="ui-blue hero page-section--content-relative">
+  <div class="page-section__wrapper clearfix">
+    <div class="page-section__content" ng-transclude="">
+  <!-- ngIf: statefulHeader.status === 'LOADING' && !acmResolved -->
+
+  <!-- ngIf: statefulHeader.status !== 'LOADING' --><div ng-switch="statefulHeader.type" ng-if="statefulHeader.status !== 'LOADING'">
+    <!-- ngSwitchWhen: sik -->
+    <!-- ngSwitchWhen: techInstall -->
+    <!-- ngSwitchDefault:  --><h1 class="heading2 mb0" ng-class="{ 'visuallyhidden' : isACMShown }" ng-switch-default="">Welcome to My Account</h1><!-- end ngSwitchWhen: -->
+  </div><!-- end ngIf: statefulHeader.status !== 'LOADING' -->
+  <!-- ngIf: isACMShown -->
+</div>
+  </div>
+</section>
+
+<!-- ngIf: lateFeeInfo -->
+
+<!-- ngIf: orderHubStatus === 'READY' -->
+
+<!-- ngIf: showCouponBanner -->
+
+<!-- ngIf: isPrepaid -->
+
+<!-- ngIf: !acmResolved || orderHubStatus === 'LOADING' -->
+
+<!-- ngIf: !isPrepaid && acmResolved && orderHubStatus !== 'LOADING' --><section class="ui-grey page-section  page-section " style="" ng-if="!isPrepaid &amp;&amp; acmResolved &amp;&amp; orderHubStatus !== 'LOADING'">
+  <div class="page-section__wrapper clearfix">
+    <div class="page-section__content" ng-transclude="">
+
+  <!-- ngIf: orderHubStatus === 'READY' -->
+
+  <!-- ngIf: orderHubStatus === 'INELIGIBLE' --><div ng-if="orderHubStatus === 'INELIGIBLE'" ng-class="{ 'hero-flex-wrap hero-flex-wrap--at-768' : permissions.billPay.read &amp;&amp; permissions.commonTasks.read &amp;&amp; commonTasks }" class="hero-flex-wrap hero-flex-wrap--at-768">
+    <!-- ngIf: permissions.billPay.read --><div class="hero-flex-wrap__main overview-section overview-section--bill" ng-if="permissions.billPay.read">
+      <h2>Bill Pay</h2>
+      <div class="card">
+        <div class="card__content">
+          <div tracking-module="friendly-bill-summary" class="header-state header-state--centered-text">
+
+  <!-- ngIf: friendlyBillSummaryStatus === 'LOADING' -->
+
+  <!-- ngIf: friendlyBillSummaryStatus === 'READY' --><div ng-if="friendlyBillSummaryStatus === 'READY'">
+
+    <div ng-class="iconClass" class="header-state__icon--small icon icon-stateful-bill-attention-blue"></div>
+
+    <div class="hgroup">
+      <!-- BEGIN: Header Messages -->
+
+        <!-- DELINQUENT -->
+        <!-- ngIf: delinquencyStatus === 'DELINQUENT' -->
+
+      <!-- END: Header Messages -->
+
+      <!-- BEGIN: Full line segments -->
+        <!-- ngIf: summarySegments.length --><p class="header-state__content" ng-if="summarySegments.length">
+
+          <span class="heading3" ng-bind-html="summarySegments[0]">Your automatic payment of $111.98 is processing</span>
+
+          <!-- ngRepeat: segment in summarySegments --><!-- ngIf: !$first --><!-- end ngRepeat: segment in summarySegments -->
+
+        </p><!-- end ngIf: summarySegments.length -->
+
+        <!-- ngIf: summarySegments.length === 0 -->
+      <!-- END: Full line segments -->
+
+    </div>
+
+    <!-- ngIf: account.status !== 'DISCONNECTED' --><span ng-if="account.status !== 'DISCONNECTED'">
+      <a class="button" href="#/billing">View Billing</a>
+      <a class="button button--primary" href="#/billing/payment">Make a Payment</a>
+    </span><!-- end ngIf: account.status !== 'DISCONNECTED' -->
+
+  </div><!-- end ngIf: friendlyBillSummaryStatus === 'READY' -->
+
+  <!-- ngIf: friendlyBillSummaryStatus === 'REJECTED' -->
+</div>
+        </div>
+      </div>
+    </div><!-- end ngIf: permissions.billPay.read -->
+
+    <!-- ngIf: permissions.commonTasks.read && commonTasks --><div class="hero-flex-wrap__aside overview-section" tracking-module="common tasks" ng-if="permissions.commonTasks.read &amp;&amp; commonTasks">
+      <h2>Common Solutions</h2>
+      <!-- ngIf: commonTasks.status === 'READY' --><div class="card-group card-group--flex-vertical-at-768" ng-if="commonTasks.status === 'READY'" ng-class="{ 'card-group--flex-vertical-at-768' : permissions.billPay.read }">
+        <!-- ngRepeat: task in commonTasks.details | limitTo:4 --><div class="card-group__item" ng-repeat="task in commonTasks.details | limitTo:4">
+          <a class="card card--has-media" ng-click="task.clickFunction($event)" ng-href="https://xfinityconnect.email.comcast.net/" target="_blank" task="task" href="https://xfinityconnect.email.comcast.net/">
+  <div class="card__media">
+  	<!-- ngIf: task.svgIcon -->
+    <!-- ngIf: task.icon -->
+    <!-- ngIf: task.iconURL --><div ng-if="task.iconURL" class="icon">
+      <img ng-src="https://edge.static-assets.top.comcast.net/cms/data/assets/bin-201801/c2296a95d17cece6017e617ff3ff36a8.png" alt="" src="pay_files/c2296a95d17cece6017e617ff3ff36a8.png">
+    </div><!-- end ngIf: task.iconURL -->
+  </div>
+  <div class="card__content">
+    <span class="link">Check Your Email</span>
+  </div>
+</a>
+        </div><!-- end ngRepeat: task in commonTasks.details | limitTo:4 --><div class="card-group__item" ng-repeat="task in commonTasks.details | limitTo:4">
+          <a class="card card--has-media" ng-click="task.clickFunction($event)" ng-href="/#/settings" target="_self" task="task" href="https://customer.xfinity.com/#/settings">
+  <div class="card__media">
+  	<!-- ngIf: task.svgIcon -->
+    <!-- ngIf: task.icon -->
+    <!-- ngIf: task.iconURL --><div ng-if="task.iconURL" class="icon">
+      <img ng-src="https://edge.static-assets.top.comcast.net/cms/data/assets/bin-201801/4e1cc39b8a863a3b3f0c425d50a29f4a.png" alt="" src="pay_files/4e1cc39b8a863a3b3f0c425d50a29f4a.png">
+    </div><!-- end ngIf: task.iconURL -->
+  </div>
+  <div class="card__content">
+    <span class="link">Manage Settings</span>
+  </div>
+</a>
+        </div><!-- end ngRepeat: task in commonTasks.details | limitTo:4 --><div class="card-group__item" ng-repeat="task in commonTasks.details | limitTo:4">
+          <a class="card card--has-media" ng-click="task.clickFunction($event)" ng-href="https://www.xfinity.com/moving" target="_blank" task="task" href="https://www.xfinity.com/moving">
+  <div class="card__media">
+  	<!-- ngIf: task.svgIcon -->
+    <!-- ngIf: task.icon -->
+    <!-- ngIf: task.iconURL --><div ng-if="task.iconURL" class="icon">
+      <img ng-src="https://edge.static-assets.top.comcast.net/cms/data/assets/bin-201801/e65138ea1a6c23e63acb1ded5eff34c9.png" alt="" src="pay_files/e65138ea1a6c23e63acb1ded5eff34c9.png">
+    </div><!-- end ngIf: task.iconURL -->
+  </div>
+  <div class="card__content">
+    <span class="link">Move or Transfer Service</span>
+  </div>
+</a>
+        </div><!-- end ngRepeat: task in commonTasks.details | limitTo:4 --><div class="card-group__item" ng-repeat="task in commonTasks.details | limitTo:4">
+          <a class="card card--has-media" ng-click="task.clickFunction($event)" ng-href="https://www.xfinity.com/support/" target="_blank" task="task" href="https://www.xfinity.com/support/">
+  <div class="card__media">
+  	<!-- ngIf: task.svgIcon -->
+    <!-- ngIf: task.icon -->
+    <!-- ngIf: task.iconURL --><div ng-if="task.iconURL" class="icon">
+      <img ng-src="https://edge.static-assets.top.comcast.net/cms/data/assets/bin-201801/e6fbac6de70a17d9257df1a4f5158ffb.png" alt="" src="pay_files/e6fbac6de70a17d9257df1a4f5158ffb.png">
+    </div><!-- end ngIf: task.iconURL -->
+  </div>
+  <div class="card__content">
+    <span class="link">Search Help &amp; Support</span>
+  </div>
+</a>
+        </div><!-- end ngRepeat: task in commonTasks.details | limitTo:4 -->
+      </div><!-- end ngIf: commonTasks.status === 'READY' -->
+
+      <!-- ngIf: commonTasks.status === 'LOADING' -->
+    </div><!-- end ngIf: permissions.commonTasks.read && commonTasks -->
+  </div><!-- end ngIf: orderHubStatus === 'INELIGIBLE' -->
+
+  <!-- ngIf: orderHubStatus === 'INELIGIBLE' && permissions.nextBestAction.read --><div ng-if="orderHubStatus === 'INELIGIBLE' &amp;&amp; permissions.nextBestAction.read" context="OVERVIEW" limit="3" priority="priority">
+  <!-- ngIf: nextBestActions.status === 'READY' && nextBestActions.details.length --><div class="overview-section overview-section--next-best-actions" tracking-module="next best actions" ng-if="nextBestActions.status === 'READY' &amp;&amp; nextBestActions.details.length">
+    <div class="card-group">
+      <!-- ngRepeat: nba in nextBestActions.details | orderBy: nbaOrder | limitTo:nbaLimit --><div tracking-module="Add an extra layer of security to your account." class="card-group__item" ng-repeat="nba in nextBestActions.details | orderBy: nbaOrder | limitTo:nbaLimit">
+        <div id="nba-twoStepVerification" class="card card--misc card--next-best-action card--has-media-at-768 card--action-right">
+          <div class="card__media">
+            <div class="circle circle--misc">
+              <!-- ngIf: nba.icon --><div ng-if="nba.icon" class="icon icon-padlock-closed-white"></div><!-- end ngIf: nba.icon -->
+              <!-- ngIf: nba.svgIcon -->
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="hgroup">
+              <h4 class="body2">Add an extra layer of security to your account.</h4>
+              <span ng-bind-html="nba.description"></span>
+              <span class="link-group link-group--mb-0">
+                <span class="link-group__item">
+                  <a custom-tracking="true" ng-href="#/users/341841070403102012Comcast.USRIMS/two-step-verification" target="_self" ng-click="trackNba(nba, 'impressionSuccessClick')" href="#/users/341841070403102012Comcast.USRIMS/two-step-verification">Turn on Two-Step Verification</a>
+                  <!-- ngIf: nba.linkOut -->
+                </span>
+              </span>
+            </div>
+          </div>
+          <!-- ngIf: nba.dismissible --><div ng-if="nba.dismissible" class="card__action">
+            <button class="card__dismiss button button--text" custom-tracking="true" ng-click="dismissNBA(nba)">
+              <span class="icon icon-remove">
+                <span class="visuallyhidden">Dismiss</span>
+              </span>
+            </button>
+          </div><!-- end ngIf: nba.dismissible -->
+        </div>
+      </div><!-- end ngRepeat: nba in nextBestActions.details | orderBy: nbaOrder | limitTo:nbaLimit --><div tracking-module="Your bill is ready" class="card-group__item" ng-repeat="nba in nextBestActions.details | orderBy: nbaOrder | limitTo:nbaLimit">
+        <div id="nba-bill-ready" class="card card--bill card--next-best-action card--has-media-at-768 card--action-right">
+          <div class="card__media">
+            <div class="circle circle--bill">
+              <!-- ngIf: nba.icon --><div ng-if="nba.icon" class="icon icon-bill-white"></div><!-- end ngIf: nba.icon -->
+              <!-- ngIf: nba.svgIcon -->
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="hgroup">
+              <h4 class="body2">Your bill is ready</h4>
+              <span ng-bind-html="nba.description">Your January 11 bill is now available</span>
+              <span class="link-group link-group--mb-0">
+                <span class="link-group__item">
+                  <a custom-tracking="true" ng-href="apis/bill/statement/Dc1ND4IgGADgf-PNDbKsiwfmOxgl9uHSedQghprhYDr79Xl4zo80MimOBRYZQwJqLIDvchCs7q6YUgd3jDeoIyjPfMUBSBWnbCifq-IZXYozs7ph3fdweUyx5iSQTien3wxsQpVNS2r3tyWao7clKn2ZJei3sDXDYEYdOt949VGjNzLs1foH?uaid=7b99750219b80091a6a99f452d862bdb" target="_blank" ng-click="trackNba(nba, 'impressionSuccessClick')" href="https://customer.xfinity.com/apis/bill/statement/Dc1ND4IgGADgf-PNDbKsiwfmOxgl9uHSedQghprhYDr79Xl4zo80MimOBRYZQwJqLIDvchCs7q6YUgd3jDeoIyjPfMUBSBWnbCifq-IZXYozs7ph3fdweUyx5iSQTien3wxsQpVNS2r3tyWao7clKn2ZJei3sDXDYEYdOt949VGjNzLs1foH?uaid=7b99750219b80091a6a99f452d862bdb">View bill details (PDF)</a>
+                  <!-- ngIf: nba.linkOut -->
+                </span>
+              </span>
+            </div>
+          </div>
+          <!-- ngIf: nba.dismissible --><div ng-if="nba.dismissible" class="card__action">
+            <button class="card__dismiss button button--text" custom-tracking="true" ng-click="dismissNBA(nba)">
+              <span class="icon icon-remove">
+                <span class="visuallyhidden">Dismiss</span>
+              </span>
+            </button>
+          </div><!-- end ngIf: nba.dismissible -->
+        </div>
+      </div><!-- end ngRepeat: nba in nextBestActions.details | orderBy: nbaOrder | limitTo:nbaLimit -->
+    </div>
+  </div><!-- end ngIf: nextBestActions.status === 'READY' && nextBestActions.details.length -->
+
+  <!-- ngIf: nextBestActions.status === 'LOADING' -->
+</div><!-- end ngIf: orderHubStatus === 'INELIGIBLE' && permissions.nextBestAction.read -->
+
+  <!-- ngIf: permissions.services.read && services --><div class="overview-section overview-section--services" tracking-module="connection status" ng-if="permissions.services.read &amp;&amp; services">
+    <div class="hgroup hgroup--inline-link">
+      <h2>Services</h2>
+      <a href="https://www.xfinity.com/support/status/" target="_blank">Status Center</a>
+    </div>
+
+    <!-- ngIf: services.status === 'READY' --><div class="card-group card-group--grid-fixed-259" ng-if="services.status === 'READY'">
+      <!-- ngRepeat: service in services.details --><div tracking-module="video" class="card-group__item" ng-repeat="service in services.details">
+        <div class="card-group mb0" service="service">
+  <div class="card-group__item">
+    <a ng-href="#/services/tv" tracking-module="service-TV" class="card card--entity card--entity-services" ng-class="{ 'card--dashed' : service.type === 'add', 'card--entity-with-alert' : service.cardStatus }" target="_self" title="Manage TV" href="#/services/tv">
+      <div class="card__content">
+        <div class="card__image">
+          <span class="color--blue-sky">
+            <!-- ngIf: service.icon --><span class="svg-icon svg-icon--90" ng-bind-html="iconHtml" ng-if="service.icon" ng-class="service.iconClass" icon="lob-video"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="10" y="25.5" width="80" height="46" rx="3" ry="3" fill="#0272b6"></rect>
+  <path fill="none" stroke="#014269" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32 74.5h36"></path>
+</svg>
+</span><!-- end ngIf: service.icon -->
+          </span>
+        </div>
+
+        <div class="hgroup mb0">
+          <h3 class="body1">TV</h3>
+        </div>
+
+        <div class="card__action">
+          <span class="link">Manage TV</span>
+          <!-- ngIf: service.linkTarget === '_blank' -->
+        </div>
+
+      </div>
+    </a>
+  </div>
+  <!-- ngIf: service.type !== 'add' && service.cardStatus -->
+</div>
+      </div><!-- end ngRepeat: service in services.details --><div tracking-module="internet" class="card-group__item" ng-repeat="service in services.details">
+        <div class="card-group mb0" service="service">
+  <div class="card-group__item">
+    <a ng-href="#/services/internet" tracking-module="service-Internet" class="card card--entity card--entity-services" ng-class="{ 'card--dashed' : service.type === 'add', 'card--entity-with-alert' : service.cardStatus }" target="_self" title="Manage Internet" href="#/services/internet">
+      <div class="card__content">
+        <div class="card__image">
+          <span class="color--blue-sky">
+            <!-- ngIf: service.icon --><span class="svg-icon svg-icon--90" ng-bind-html="iconHtml" ng-if="service.icon" ng-class="service.iconClass" icon="lob-internet"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="none" stroke="#014269" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 73h78"></path>
+  <path d="M81 27H19a3 3 0 0 0-3 3v40h68V30a3 3 0 0 0-3-3z" fill="#0272b6"></path>
+</svg>
+</span><!-- end ngIf: service.icon -->
+          </span>
+        </div>
+
+        <div class="hgroup mb0">
+          <h3 class="body1">Internet</h3>
+        </div>
+
+        <div class="card__action">
+          <span class="link">Manage Internet</span>
+          <!-- ngIf: service.linkTarget === '_blank' -->
+        </div>
+
+      </div>
+    </a>
+  </div>
+  <!-- ngIf: service.type !== 'add' && service.cardStatus -->
+</div>
+      </div><!-- end ngRepeat: service in services.details --><div tracking-module="" class="card-group__item" ng-repeat="service in services.details">
+        <div class="card-group mb0" service="service">
+  <div class="card-group__item">
+    <a ng-href="https://www.xfinity.com/buy/plan/offersfilter?upgrade=true" tracking-module="service-Add Services" class="card card--entity card--entity-services card--dashed" ng-class="{ 'card--dashed' : service.type === 'add', 'card--entity-with-alert' : service.cardStatus }" target="_blank" title="Shop for Additional Services" href="https://www.xfinity.com/buy/plan/offersfilter?upgrade=true">
+      <div class="card__content">
+        <div class="card__image">
+          <span class="color--blue-sky">
+            <!-- ngIf: service.icon --><span class="svg-icon svg-icon--60" ng-bind-html="iconHtml" ng-if="service.icon" ng-class="service.iconClass" icon="circle-plus"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+  <g style="fill:none;stroke:currentColor;stroke-miterlimit:10;">
+    <line x1="20" y1="13.5" x2="20" y2="26.5"></line>
+    <line x1="26.5" y1="20" x2="13.5" y2="20"></line>
+    <path d="M32.5,20A12.5,12.5,0,1,1,20,7.5,12.46,12.46,0,0,1,32.5,20Z"></path>
+  </g>
+</svg></span><!-- end ngIf: service.icon -->
+          </span>
+        </div>
+
+        <div class="hgroup mb0">
+          <h3 class="body1">Add Services</h3>
+        </div>
+
+        <div class="card__action">
+          <span class="link">Shop for Additional Services</span>
+          <!-- ngIf: service.linkTarget === '_blank' --><span ng-if="service.linkTarget === '_blank'" class="icon icon-link-out"></span><!-- end ngIf: service.linkTarget === '_blank' -->
+        </div>
+
+      </div>
+    </a>
+  </div>
+  <!-- ngIf: service.type !== 'add' && service.cardStatus -->
+</div>
+      </div><!-- end ngRepeat: service in services.details -->
+    </div><!-- end ngIf: services.status === 'READY' -->
+
+    <!-- ngIf: services.status === 'LOADING' -->
+  </div><!-- end ngIf: permissions.services.read && services -->
+
+  <!-- ngIf: permissions.recentActivity.read && activity --><div class="overview-section overview-section--recent-activty" tracking-module="recent activity" ng-if="permissions.recentActivity.read &amp;&amp; activity">
+    <div class="hgroup">
+      <h2>Recent Activity</h2>
+      <p class="body3">View your recent account events. <a href="#/recent-activity">See all activity</a></p>
+    </div>
+
+    <!-- ngIf: activity.status === 'READY' --><div class="card-group" ng-if="activity.status === 'READY'">
+      <!-- ngRepeat: item in activity.details | orderBy:'-date' | limitTo:3 --><div tracking-module="Your bill is ready to view" class="card-group__item" ng-repeat="item in activity.details | orderBy:'-date' | limitTo:3">
+        <div class="card card--info card--has-date card--action-right-at-768" item="item">
+  <div class="card__date hgroup">
+    <!-- ngIf: item.date --><span ng-if="item.date">
+      <span class="card__date-item card__date-item--day heading5">Sat</span>
+      <span class="card__date-item card__date-item--month-date heading5">Jan 12</span>
+      <!-- ngIf: item.showTime --><span class="card__date-item card__date-item--time body4" ng-if="item.showTime">1:52 pm</span><!-- end ngIf: item.showTime -->
+    </span><!-- end ngIf: item.date -->
+  </div>
+
+  <div class="card__content">
+    <div class="hgroup">
+      <h4 class="body2 activity-list__item-name">Your bill is ready to view</h4>
+      <p ng-bind-html="item.description | trustedHTML"></p>
+    </div>
+  </div>
+
+  <!-- ngIf: item.link || item.actionAmount --><div class="card__action" ng-if="item.link || item.actionAmount">
+    <!-- ngIf: item.actionAmount -->
+    <!-- ngIf: item.link && item.linkText --><a ng-if="item.link &amp;&amp; item.linkText" ng-href="/apis/recent-notifications/AEF85A88-82AE-4BFB-AB33-8F2A3611885B?date=20190112" target="_blank" ng-bind-html="item.linkText | trustedHTML" href="https://customer.xfinity.com/apis/recent-notifications/AEF85A88-82AE-4BFB-AB33-8F2A3611885B?date=20190112">View Details <span class="icon-link-out icon--inline"></span></a><!-- end ngIf: item.link && item.linkText -->
+  </div><!-- end ngIf: item.link || item.actionAmount -->
+</div>
+      </div><!-- end ngRepeat: item in activity.details | orderBy:'-date' | limitTo:3 --><div tracking-module="Thank you for your recent payment" class="card-group__item" ng-repeat="item in activity.details | orderBy:'-date' | limitTo:3">
+        <div class="card card--info card--has-date card--action-right-at-768" item="item">
+  <div class="card__date hgroup">
+    <!-- ngIf: item.date --><span ng-if="item.date">
+      <span class="card__date-item card__date-item--day heading5">Tue</span>
+      <span class="card__date-item card__date-item--month-date heading5">Jan 08</span>
+      <!-- ngIf: item.showTime --><span class="card__date-item card__date-item--time body4" ng-if="item.showTime">1:46 am</span><!-- end ngIf: item.showTime -->
+    </span><!-- end ngIf: item.date -->
+  </div>
+
+  <div class="card__content">
+    <div class="hgroup">
+      <h4 class="body2 activity-list__item-name">Thank you for your recent payment</h4>
+      <p ng-bind-html="item.description | trustedHTML"></p>
+    </div>
+  </div>
+
+  <!-- ngIf: item.link || item.actionAmount --><div class="card__action" ng-if="item.link || item.actionAmount">
+    <!-- ngIf: item.actionAmount -->
+    <!-- ngIf: item.link && item.linkText --><a ng-if="item.link &amp;&amp; item.linkText" ng-href="/apis/recent-notifications/30FC7A29-AFE2-4516-AE55-E710F0395B45?date=20190108" target="_blank" ng-bind-html="item.linkText | trustedHTML" href="https://customer.xfinity.com/apis/recent-notifications/30FC7A29-AFE2-4516-AE55-E710F0395B45?date=20190108">View Details <span class="icon-link-out icon--inline"></span></a><!-- end ngIf: item.link && item.linkText -->
+  </div><!-- end ngIf: item.link || item.actionAmount -->
+</div>
+      </div><!-- end ngRepeat: item in activity.details | orderBy:'-date' | limitTo:3 --><div tracking-module="Your bill is ready to view" class="card-group__item" ng-repeat="item in activity.details | orderBy:'-date' | limitTo:3">
+        <div class="card card--info card--has-date card--action-right-at-768" item="item">
+  <div class="card__date hgroup">
+    <!-- ngIf: item.date --><span ng-if="item.date">
+      <span class="card__date-item card__date-item--day heading5">Wed</span>
+      <span class="card__date-item card__date-item--month-date heading5">Dec 12</span>
+      <!-- ngIf: item.showTime --><span class="card__date-item card__date-item--time body4" ng-if="item.showTime">4:04 pm</span><!-- end ngIf: item.showTime -->
+    </span><!-- end ngIf: item.date -->
+  </div>
+
+  <div class="card__content">
+    <div class="hgroup">
+      <h4 class="body2 activity-list__item-name">Your bill is ready to view</h4>
+      <p ng-bind-html="item.description | trustedHTML"></p>
+    </div>
+  </div>
+
+  <!-- ngIf: item.link || item.actionAmount --><div class="card__action" ng-if="item.link || item.actionAmount">
+    <!-- ngIf: item.actionAmount -->
+    <!-- ngIf: item.link && item.linkText --><a ng-if="item.link &amp;&amp; item.linkText" ng-href="/apis/recent-notifications/6AE5141C-C577-47D8-A04F-B45B7FE41C36?date=20181213" target="_blank" ng-bind-html="item.linkText | trustedHTML" href="https://customer.xfinity.com/apis/recent-notifications/6AE5141C-C577-47D8-A04F-B45B7FE41C36?date=20181213">View Details <span class="icon-link-out icon--inline"></span></a><!-- end ngIf: item.link && item.linkText -->
+  </div><!-- end ngIf: item.link || item.actionAmount -->
+</div>
+      </div><!-- end ngRepeat: item in activity.details | orderBy:'-date' | limitTo:3 -->
+    </div><!-- end ngIf: activity.status === 'READY' -->
+
+    <!-- ngIf: activity.status === 'LOADING' -->
+
+  </div><!-- end ngIf: permissions.recentActivity.read && activity -->
+
+  <!-- ngIf: permissions.commonSolutions.read --><div class="overview-section overview-section--common-solutions" tracking-module="upgrade module" ng-if="permissions.commonSolutions.read">
+    <h2>Need To Change Something?</h2>
+
+    <div class="card-group card-group--grid card-group--grid-1-3-4">
+      <div tracking-module="manage your package" class="card-group__item">
+        <a class="card card--has-media card--has-media-vertical-at-768" href="http://www.xfinity.com/buy/plan/myPlan" target="_blank" link="http://www.xfinity.com/buy/plan/myPlan" link-text="Manage Your Plan" link-target="_blank" icon="upgrade-plan-blue">
+  <div class="card__media">
+    <!-- ngIf: icon --><div ng-if="icon" class="icon icon-upgrade-plan-blue"></div><!-- end ngIf: icon -->
+    <!-- ngIf: svgIcon -->
+  </div>
+  <div class="card__content">
+    <p class="link">Manage Your Plan</p>
+  </div>
+</a>
+      </div>
+      <!-- ngIf: hasVideo --><div tracking-module="add premium channels" class="card-group__item" ng-if="hasVideo">
+        <a class="card card--has-media card--has-media-vertical-at-768" href="https://www.xfinity.com/buy/plan/addon/channel" target="_blank" link="https://www.xfinity.com/buy/plan/addon/channel" link-text="Manage Premium Channels" link-target="_blank" icon="premium-add-blue">
+  <div class="card__media">
+    <!-- ngIf: icon --><div ng-if="icon" class="icon icon-premium-add-blue"></div><!-- end ngIf: icon -->
+    <!-- ngIf: svgIcon -->
+  </div>
+  <div class="card__content">
+    <p class="link">Manage Premium Channels</p>
+  </div>
+</a>
+      </div><!-- end ngIf: hasVideo -->
+      <div tracking-module="Communications and Ad Preferences" class="card-group__item">
+        <a class="card card--has-media card--has-media-vertical-at-768" href="#/users/341841070403102012Comcast.USRIMS/notifications" target="_self" link="#/users/341841070403102012Comcast.USRIMS/notifications" link-text="Alerts &amp; Ad Preferences" link-target="_self" icon="alerts-notifications-blue">
+  <div class="card__media">
+    <!-- ngIf: icon --><div ng-if="icon" class="icon icon-alerts-notifications-blue"></div><!-- end ngIf: icon -->
+    <!-- ngIf: svgIcon -->
+  </div>
+  <div class="card__content">
+    <p class="link">Alerts &amp; Ad Preferences</p>
+  </div>
+</a>
+      </div>
+      <div tracking-module="add or swap equipment" class="card-group__item">
+        <a class="card card--has-media card--has-media-vertical-at-768" href="https://www.xfinity.com/buy/plan/addon/equipment" target="_blank" link="https://www.xfinity.com/buy/plan/addon/equipment" link-text="Add or Swap Equipment" link-target="_blank" icon="equipment-add-swap-blue">
+  <div class="card__media">
+    <!-- ngIf: icon --><div ng-if="icon" class="icon icon-equipment-add-swap-blue"></div><!-- end ngIf: icon -->
+    <!-- ngIf: svgIcon -->
+  </div>
+  <div class="card__content">
+    <p class="link">Add or Swap Equipment</p>
+  </div>
+</a>
+      </div>
+    </div>
+  </div><!-- end ngIf: permissions.commonSolutions.read -->
+</div>
+  </div>
+</section><!-- end ngIf: !isPrepaid && acmResolved && orderHubStatus !== 'LOADING' -->
+
+
+</main><!-- ngIf: !acceptingTermsOfService && !route.current.hideHelpAndSupport --><cms-support tracking-module="help module" type="route.current.activeNavItem" ng-if="!acceptingTermsOfService &amp;&amp; !route.current.hideHelpAndSupport"><section class="page-section ui-light cms-support" style="" tracking-module="cms-support" classes="ui-light cms-support">
+  <div class="page-section__wrapper clearfix">
+    <div class="page-section__content" ng-transclude="">
+  <div class="cms-support__title">
+    <h2 class="heading1">Help &amp; Support</h2>
+    <a class="support-title-link" ng-href="https://www.xfinity.com/support/?CMP=ILC:MA:BAU:SUB:COM:HLP:INT55e0877fe16f7" target="_blank" href="https://www.xfinity.com/support/?CMP=ILC:MA:BAU:SUB:COM:HLP:INT55e0877fe16f7">View Help &amp; Support</a>
+  </div>
+  <div class="ma-grid cms-support__body">
+    <!-- ngRepeat: column in data.columns | limitTo:4 --><div class="ma-grid__col ma-grid__col--1of4" ng-repeat="column in data.columns | limitTo:4" ng-class="{'cms-support__no-title':!column.title}">
+      <h6 class="cms-support__heading">Recommended Articles</h6>
+      <ul class="cms-support__list">
+        <!-- ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/status" target="_blank" href="https://www.xfinity.com/support/status">Check for a Service Outage in Your Area</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/articles/accounts-usernames-passwords" target="_blank" href="https://www.xfinity.com/support/articles/accounts-usernames-passwords">Account Numbers, Usernames, Passwords and PINs</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/articles/view-change-wifi-password" target="_blank" href="https://www.xfinity.com/support/articles/view-change-wifi-password">Change Your WiFi Network Name and Password Online</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/articles/internet-connectivity-troubleshooting" target="_blank" href="https://www.xfinity.com/support/articles/internet-connectivity-troubleshooting">Troubleshooting Issues with Your XFINITY Internet or WiFi Connection</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links -->
+      </ul>
+    </div><!-- end ngRepeat: column in data.columns | limitTo:4 --><div class="ma-grid__col ma-grid__col--1of4" ng-repeat="column in data.columns | limitTo:4" ng-class="{'cms-support__no-title':!column.title}">
+      <h6 class="cms-support__heading">Quick Links</h6>
+      <ul class="cms-support__list">
+        <!-- ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="#/billing/payment" target="_self" href="#/billing/payment">Pay Your Bill</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/service-center-locations" target="_blank" href="https://www.xfinity.com/support/service-center-locations">Find an Xfinity Store</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/articles/accounts-usernames-passwords" target="_blank" href="https://www.xfinity.com/support/articles/accounts-usernames-passwords">Username and Password</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="http://forums.comcast.com/" target="_blank" href="http://forums.comcast.com/">Ask the XFINITY Community</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links -->
+      </ul>
+    </div><!-- end ngRepeat: column in data.columns | limitTo:4 --><div class="ma-grid__col ma-grid__col--1of4" ng-repeat="column in data.columns | limitTo:4" ng-class="{'cms-support__no-title':!column.title}">
+      <h6 class="cms-support__heading">Topics</h6>
+      <ul class="cms-support__list">
+        <!-- ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/account-billing/#managing-your-service/self-service-options" target="_blank" href="https://www.xfinity.com/support/account-billing/#managing-your-service/self-service-options">Self Service</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/internet/" target="_blank" href="https://www.xfinity.com/support/internet/">Internet</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/account-billing/" target="_blank" href="https://www.xfinity.com/support/account-billing/">Billing</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/tv/" target="_blank" href="https://www.xfinity.com/support/tv/">TV</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links -->
+      </ul>
+    </div><!-- end ngRepeat: column in data.columns | limitTo:4 --><div class="ma-grid__col ma-grid__col--1of4" ng-repeat="column in data.columns | limitTo:4" ng-class="{'cms-support__no-title':!column.title}">
+      <h6 class="cms-support__heading">Contact</h6>
+      <ul class="cms-support__list">
+        <!-- ngRepeat: item in column.link_wrap.links --><li ng-repeat="item in column.link_wrap.links">
+          <!-- ngIf: item.heading --><div ng-if="item.heading" class="cms-support__item-heading">Get answers from Comcast agents and customers like you.</div><!-- end ngIf: item.heading -->
+          <a ng-href="https://www.xfinity.com/support/contact-us/" target="_blank" href="https://www.xfinity.com/support/contact-us/">View contact options</a>
+        </li><!-- end ngRepeat: item in column.link_wrap.links -->
+      </ul>
+    </div><!-- end ngRepeat: column in data.columns | limitTo:4 -->
+    <!-- Contact not currently implimented in CMS data -->
+    <!-- <div class="ma-grid__col ma-grid__col--1of4">
+      <h3 class="heading2">{{data.contact.heading.label}}</h3>
+      <img class="alignnone" ng-src="{{data.contact.link.image.src}}" alt="{{data.contact.link.image.alt}}">
+      <p>{{data.contact.link.text}}</p>
+      <div class="action">
+        <a class="button" ng-href="{{data.contact.link.url}}">{{data.contact.link.label}}</a>
+      </div>
+    </div> -->
+  </div>
+</div>
+  </div>
+</section>
+</cms-support><!-- end ngIf: !acceptingTermsOfService && !route.current.hideHelpAndSupport --></div></div></div><!-- end ngIf: account.accountNumber && termsOfServiceAccepted.status === 'READY' --><!-- ngIf: termsOfServiceAccepted.status === 'ERROR' --><!-- ngIf: (!account.accountNumber.length && termsOfServiceAccepted.status === 'READY') || termsOfServiceAccepted.status === 'LOADING' --></div><xc-footer ng-show="!route.current.takeover &amp;&amp; showPolarisFooter" client-id="myAccountWeb" tracking-module="footer" aria-hidden="false" class=""><div class="xc-footer--panels" data-dtm="container" data-dtm-level1="polaris" data-dtm-level2="footer" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-footer&quot;]}"><div class="xc-footer--panel" data-span-full=""><button class="xc-footer--toggle">Show <span class="xc-footer--toggle-show">More </span><span class="xc-footer--toggle-hide">Less</span></button><h3 class="xc-footer--heading">I Want To</h3><ul class="xc-footer--list" data-columns="4"><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/bill-pay">View &amp; Pay Bill</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://xfinityconnect.email.comcast.net/">Check Email &amp; Voicemail</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://customer.xfinity.com/#/">Manage My Account</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/stream/listings">Check TV Listings</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/stream/">Watch TV Online</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/support/contact-us">Contact Customer Support</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="http://referafriend.xfinity.com/">Refer-a-Friend</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/apps">Get Apps</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://customer.xfinity.com/#/settings/parental-controls">Manage Parental Controls</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://internetsecurity.xfinity.com/">Download Norton Security</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://customer.xfinity.com/#/users/me">Manage Users &amp; Alerts</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://idm.xfinity.com/myaccount/reset">Reset My Password</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://customer.xfinity.com/#/settings/account">Find My Account Number</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://home.xfinity.com/">Monitor Home Security</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/buy/plan/gbboffers">Upgrade My Service</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://idm.xfinity.com/myaccount/lookup">Find My Xfinity Username</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/support/">Get Help &amp; Support</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/support/remotes/">Program My Remote</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link xc-footer--link-iperceptions" href="https://collect.iperceptions.com/?lID=1&amp;rn=123531&amp;pID=1&amp;hs1=102214&amp;hs2=91787&amp;siteID=1&amp;referrer=Link&amp;sdfc=03b756c0-123531-0dcbb1db-cd59-44d5-8c25-4e78d3da0dac&amp;source=91787&amp;destination=commentcard&amp;width=680&amp;height=750">Submit Feedback</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/support/service-center-locations/">Find an Xfinity Store</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/moving">Move My Services</a></li></ul></div><div class="xc-footer--panel" data-span-half=""><button class="xc-footer--toggle">Show <span class="xc-footer--toggle-show">More </span><span class="xc-footer--toggle-hide">Less</span></button><h3 class="xc-footer--heading">Shop</h3><ul class="xc-footer--list" data-columns="2"><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/offers">Bundles &amp; Promotions</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/digital-cable-tv">TV</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/internet-service">Internet</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/home-phone-services">Voice</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/home-security">Home</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/learn/mobile-service">Xfinity Mobile</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://corporate.comcast.com/hub/customer-experience">Customer Guarantee</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/compare/comcast-xfinity-vs-verizon-fios">Compare the Competition</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/locations/in-my-area">Service in my Area</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/student">Student Offers</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://business.comcast.com/">Comcast Business</a></li></ul></div><div class="xc-footer--panel" data-span-half=""><button class="xc-footer--toggle">Show <span class="xc-footer--toggle-show">More </span><span class="xc-footer--toggle-hide">Less</span></button><h3 class="xc-footer--heading">About Comcast</h3><ul class="xc-footer--list" data-columns="2"><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://corporate.comcast.com/company">About Comcast</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://www.comcastspotlight.com/?cid=112233">Advertise with Us</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://jobs.comcast.com/">Careers</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://corporate.comcast.com/press">Press Room</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://corporate.comcast.com/">Corporate Site</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/policies">Customer Agreements &amp; Policies</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/policies/internet-broadband-disclosures">Xfinity Internet Broadband Disclosures</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/corporate/customers/policies/cavoicedisclosure">Xfinity Voice: Use of Personal Info</a></li><li class="xc-footer--li"><a rel="nofollow" class="xc-footer--link" href="https://corporate.comcast.com/values">Social Responsibility</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/corporate/legal/privacystatement">Privacy Statement</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/corporate/legal/visitoragreement">Visitor Agreement</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/hub">Discover Xfinity</a></li><li class="xc-footer--li"><a class="xc-footer--link" href="https://www.xfinity.com/site-map">Sitemap</a></li></ul></div></div><div class="xc-footer--bottom" data-dtm="container" data-dtm-level1="polaris" data-dtm-level2="footer" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-footer&quot;]}"><div class="xc-footer--bottom-container"><a class="xc-footer--xfinity-logo" href="https://www.xfinity.com/?INTCMP=ILC:MA:GEN:GEN5b9ab8ad1e540"><img class="xc-footer--xfinity-logo-img" src="pay_files/xfinity_logo.svg" alt="xfinity official logo, comcast official logo"></a><ul class="xc-footer--terms" none=""><li class="xc-footer--terms-li xc-footer--legal-customer"><a class="xc-footer--terms-link" href="https://my.xfinity.com/adinformation/">Ad Choices</a></li><li class="xc-footer--terms-li xc-footer--legal-customer"><a class="xc-footer--terms-link" href="https://my.xfinity.com/privacy/" id="xc-footer--privacy">Web Privacy Policy</a></li><li class="xc-footer--terms-li xc-footer--legal-customer"><a class="xc-footer--terms-link" href="https://my.xfinity.com/terms/" id="xc-footer--terms">Web Terms of Service</a></li><li class="xc-footer--terms-li xc-footer--legal-corporate"><a class="xc-footer--terms-link" href="https://www.xfinity.com/corporate/legal/privacystatement" id="xc-footer--corporateprivacy">Privacy Statement</a></li><li class="xc-footer--terms-li xc-footer--legal-corporate"><a class="xc-footer--terms-link" href="https://www.xfinity.com/corporate/legal/visitoragreement" id="xc-footer--corporatevisitoragreement">Visitor Agreement</a></li></ul><ul class="xc-footer--social"><li class="xc-footer--social-li"><a rel="nofollow" class="xc-footer--social-link xc-footer--twitter" href="https://twitter.com/XFINITY"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect fill="#1da1f2" width="400" height="400"></rect><path fill="#fff" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"></path><rect fill="none" width="400" height="400"></rect></svg> Twitter - Follow us for exclusive deals</a></li><li class="xc-footer--social-li"><a rel="nofollow" class="xc-footer--social-link xc-footer--youtube" href="https://www.youtube.com/user/xfinity?feature=results_main"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 300" width="300" height="300"><g transform="scale(0.75,0.75)"><rect width="400" height="400" style="fill:#ff0000;fill-opacity:1" x="0" y="0"></rect><g transform="matrix(7.8701756,0,0,7.8701756,695.19553,-948.4235)" id="g4167"><path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 149.9375 79.222656 C 149.9375 79.222656 86.718651 79.222715 70.851562 83.345703 C 62.355775 85.719505 55.360154 92.715203 52.986328 101.33594 C 48.863375 117.20304 48.863281 150.0625 48.863281 150.0625 C 48.863281 150.0625 48.863375 183.0467 52.986328 198.66406 C 55.360154 207.28468 62.230834 214.15544 70.851562 216.5293 C 86.843592 220.77718 149.9375 220.77734 149.9375 220.77734 C 149.9375 220.77734 213.28168 220.77729 229.14844 216.6543 C 237.76923 214.28049 244.63977 207.53464 246.88867 198.78906 C 251.1366 183.04674 251.13672 150.1875 251.13672 150.1875 C 251.13672 150.1875 251.26156 117.20304 246.88867 101.33594 C 244.63977 92.715203 237.76923 85.844606 229.14844 83.595703 C 213.28168 79.222856 149.9375 79.222656 149.9375 79.222656 z M 129.82227 119.70312 L 182.42188 150.0625 L 129.82227 180.29688 L 129.82227 119.70312 z " transform="matrix(0.16941596,0,0,0.16941596,-88.332912,120.50856)"></path></g></g></svg> YouTube – Find tutorials and demos</a></li><li class="xc-footer--social-li"><a rel="nofollow" class="xc-footer--social-link xc-footer--facebook" href="https://www.facebook.com/xfinity"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="266.893px" height="266.895px" viewBox="0 0 266.893 266.895"><path fill="#3C5A99" d="M251.831,266.586c8.146,0,14.753-6.606,14.753-14.755V14.01c0-8.149-6.605-14.754-14.753-14.754H14.01 C5.86-0.745-0.745,5.86-0.745,14.01v237.822c0,8.147,6.604,14.755,14.754,14.755H251.831z"></path><path fill="#FFFFFF" d="M183.709,266.586V163.061h34.748l5.202-40.346h-39.95V96.957c0-11.681,3.243-19.641,19.992-19.641 l21.364-0.009V41.221c-3.694-0.492-16.376-1.59-31.131-1.59c-30.802,0-51.89,18.802-51.89,53.33v29.753h-34.838v40.346h34.838 v103.525H183.709z"></path></svg> Facebook – Reach out on Facebook</a></li></ul></div></div><h4 class="xc-footer--copyright" data-dtm="container" data-dtm-level1="polaris" data-dtm-level2="footer" data-tracking="{&quot;container&quot;:[&quot;xc-polaris-footer&quot;]}"><a class="xc-footer--copyright-link" href="https://www.xfinity.com/?INTCMP=ILC:MA:GEN:GEN5b9ab8ad1e540">© &nbsp;2019&nbsp;Comcast</a></h4></xc-footer><!-- ngIf: !agentView --><script ng-if="!agentView">window.triggerIperception=function(){try{"object"==typeof iPerceptions&&iPerceptions.Wrapper&&"function"==typeof iPerceptions.Wrapper.exec?iPerceptions.Wrapper.exec(window.location.href,!0):(window.iperceptionskey="410f8076-db76-454d-bfc2-c724a5fc59b0",e=document.createElement("script"),t=document.getElementsByTagName("body")[0],e.type="text/javascript",e.async=!0,e.src="//universal.iperceptions.com/wrapper.js",t.appendChild(e))}catch(e){}var e,t};</script><!-- end ngIf: !agentView --></div>
+
+
+
+<!-- end ngIf: access.loginRequired --></div><iframe id="polarisIframe" src="https://polaris.xfinity.com/orc.html?domain=customer.xfinity.com" style="display: none;"></iframe><script>var segMin=0,segMax=9;function setCookie(e,t,o){if(o){var i=new Date;i.setTime(i.getTime()+24*o*60*60*1e3);var n="; expires="+i.toGMTString()}else n="";document.cookie=e+"="+t+n+"; path=/"}function getCookie(e){var t=document.cookie.split(";");if(t)for(var o=0;o<t.length;o++){var i=t[o].split("=");if(i[0].trim()===e)return i[1]}return null}function inURL(e){return!!e&&-1<document.location.href.indexOf(e)}function inSegment(e){var t="xf_seg_override";return inURL("AdobeTT")?(setCookie(t,"1"),!0):segMin<=e&&e<=segMax||1==+getCookie(t)}function getSegment(){var e,t="xf_seg";return inURL("AdobeLane")&&(e=document.location.href.match(/AdobeLane=(\d+)/))&&setCookie(t,e[1]),parseInt(getCookie(t)||-1,0)}var seg=getSegment(),adobeDTMScriptElement=document.createElement("script");function eraseCookie(e){setCookie(e,"",-1)}"prod"===window.MAW.env?document.write('<script src="//assets.adobedtm.com/43896e740dcedef854392e0be6ea80deb8eb2ba5/satelliteLib-773f1d685076ba02ef9dd20f568cce9a6f1991dd.js"><\/script>'):document.write('<script src="//assets.adobedtm.com/43896e740dcedef854392e0be6ea80deb8eb2ba5/satelliteLib-773f1d685076ba02ef9dd20f568cce9a6f1991dd-staging.js"><\/script>'),eraseCookie("cust-prd_ch"),eraseCookie("cust-prd_po"),eraseCookie("cust-prd_wc");</script><script src="pay_files/satelliteLib-773f1d685076ba02ef9dd20f568cce9a6f1991dd.js"></script><script type="text/javascript">document.dispatchEvent(new window.CustomEvent('c-tracking-init-start', {
+      bubbles: true
+    }));
+    document.dispatchEvent(new window.CustomEvent('c-tracking-init-styles', {
+      bubbles: true
+    }));
+    document.dispatchEvent(new window.CustomEvent('c-tracking-init-end', {
+      bubbles: true
+    }));</script><script>var bbScript = document.createElement('script');
+    if (window.location.href.indexOf('#/billing/brite') !== -1) {
+      window.isBriteBillRoute = true;
+      bbScript.src = 'assets/js/bundle-bb.edf8e374.js';
+    } else {
+      window.isBriteBillRoute = false;
+      bbScript.src = 'assets/js/bundle.7cfad766.js';
+    }
+    document.body.appendChild(bbScript);</script><script src="pay_files/bundle.js"></script><script>!function(){var e=document.createElement("link");e.rel="stylesheet",e.href="assets/css/icons.dcc8dde1.css",e.type="text/css";var t=document.getElementsByTagName("link")[0];t.parentNode.insertBefore(e,t);var s=document.createElement("link");s.rel="stylesheet",s.href="assets/css/britebill.de7e8820.css",s.type="text/css";var n=document.getElementsByTagName("link")[0];n.parentNode.insertBefore(s,n)}();</script><script src="pay_files/js_002"></script><script src="pay_files/js"></script><iframe style="display: none;" src="pay_files/a.html" width="1" height="1"></iframe><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7061102183243771"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.4648251229415393" alt="" src="pay_files/0.txt" width="0" height="0"></div><iframe style="display: none; visibility: hidden;" src="pay_files/activityi.html" width="0" height="0"></iframe><script src="pay_files/adsct" type="text/javascript"></script><script type="text/javascript" async="" src="pay_files/wrapper.js"></script><iframe src="pay_files/iFrame.html" style="display: none;" id="iPerceptionsFrame" title="iPerceptionsFrame"></iframe><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_comcast_0" name="destination_publishing_iframe_comcast_0_name" style="display: none; width: 0px; height: 0px;" src="pay_files/dest5.html" class="aamIframeLoaded"></iframe></body></html>
